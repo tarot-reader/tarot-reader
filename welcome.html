@@ -14,8 +14,8 @@
     <header>
         <h1>Your Online Tarot Reading</h1>
         <a>About Us</a>
-        <a>Your Reading</a>
-        <a>Tarot Library</a>
+        <a href="./reading.html">Your Reading</a>
+        <a href="./library.html">Tarot Library</a>
     </header>
 
     <main>
@@ -36,16 +36,16 @@
                 </p>
                 
                 <p>
-                    <label for="birthday">Birthday</label>
+                    <label for="birthday">DOB</label>
                     <input id="birthday" name="birthday" value="" type="date" required>
                 </p>
                 
-                <input type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
 
             </fieldset>
         </form>
     </main>
-
+    <script type="module" src="/src/welcome/get-user-info.js"></script>
 </body>
 
 </html>
