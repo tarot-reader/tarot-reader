@@ -13,6 +13,7 @@ test('Render one card', assert => {
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: 'assets/the-fool.webp',
+        altId: 'The Fool'
     };
     const expected = '<div class="card"><img src="assets/the-fool.webp" alt="The Fool"><p>Inexperience, one seeking fulfillment, foolishness.</p></div>';
     
