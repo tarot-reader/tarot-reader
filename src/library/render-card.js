@@ -1,6 +1,7 @@
 function renderCard(card) {
     const div = document.createElement('div');
     div.classList.add('card');
+    div.id = card.name;
 
     const img = document.createElement('img');
     img.src = card.imgSrc;
