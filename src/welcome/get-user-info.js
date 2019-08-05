@@ -15,6 +15,6 @@ form.addEventListener('submit', (event) => {
     info.save('names', userInfo.name);
     info.save('birthdays', userInfo.birthday);
 
-    window.location.assign('../reading.html')
+    window.location.assign('../reading.html');
     form.reset();
 });
