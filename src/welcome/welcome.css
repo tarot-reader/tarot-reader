@@ -27,6 +27,7 @@ header {
 a {
     margin-top: 35px;
     text-decoration: underline;
+    color: rgba(253, 243, 250, 0.952);
 }
 
 a:hover {
@@ -70,7 +71,7 @@ form {
     border-radius: 5px;
 }
 
-input[type='submit'] {
+button {
     color: rgb(252, 228, 245);
     background-color: black;
     width: 100px;
