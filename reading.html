@@ -19,31 +19,31 @@
     </header>
     <main>
         <section id="tarot-reading">
-            <div id="left-card">
+            <div id="left-card-back">
                 <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
-            <div id="middle-card">
+            <div id="middle-card-back">
                 <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
-            <div id="left-card">
+            <div id="right-card-back">
                 <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
         
-            <div class="hidden" id="left-card">
-                <img class="tarot-card" src="/assets/temperance.jpg" alt="temperance">
+            <div class="hidden" id="left-card-face">
+                <img class="tarot-card" src="/assets/temperance.jpg" alt="">
             </div>
-            <div class="hidden" id="middle-card">
-                <img class="tarot-card" src="/assets/the-devil.jpg" alt="the devil">
+            <div class="hidden" id="middle-card-face">
+                <img class="tarot-card" src="/assets/the-devil.jpg" alt="">
             </div>
-            <div class="hidden" id="left-card">
-                <img class="tarot-card" src="/assets/the-lovers.jpg" alt="the lovers">
+            <div class="hidden" id="right-card-face">
+                <img class="tarot-card" src="/assets/the-lovers.jpg" alt="">
             </div>
         </section>
         <section class="button">
-            <button>Get Reading</button>
+            <button id="render-reading">Get Reading</button>
         </section>
 
     </main>
-    
+   <script src="/src/reading/render-reading.js" type="module"></script> 
 </body>
 </html>

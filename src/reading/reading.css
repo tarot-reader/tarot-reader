@@ -43,11 +43,22 @@ main {
     text-align: center;
 }
 
-#middle-card {
+#render-reading {
+    margin-top: 80px;
+    font-size: 1.2em;
+    width: 180px;
+    height: 80px;
+    background-color:goldenrod;
+    color: brown;
+    cursor: pointer;
+}
+
+#middle-card-back, #middle-card-face {
     margin-top: 30px;
 }
 
-#left-card, #right-card {
+#left-card-back, #right-card-back, 
+#left-card-face, #right-card-face {
     margin-top: 150px;
 }
 
