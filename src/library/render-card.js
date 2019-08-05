@@ -4,7 +4,7 @@ function renderCard(card) {
 
     const img = document.createElement('img');
     img.src = card.imgSrc;
-    img.alt = card.name;
+    img.alt = card.altId;
     div.appendChild(img);
 
     const p = document.createElement('p');
