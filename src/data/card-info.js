@@ -6,6 +6,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-fool.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Magician',
@@ -14,6 +15,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-magician.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The High Priestess',
@@ -22,6 +24,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-high-priestess.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Empress',
@@ -30,6 +33,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-empress.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Emperor',
@@ -38,6 +42,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-emperor.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Hierophant',
@@ -46,6 +51,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-hierophant.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Lovers',
@@ -54,6 +60,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-lovers.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Chariot',
@@ -62,6 +69,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-chariot.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'Strength',
@@ -70,6 +78,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/strength.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Hermit',
@@ -78,6 +87,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-hermit.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'Wheel of Fortune',
@@ -86,6 +96,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/wheel-of-fortune.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'Justice',
@@ -94,6 +105,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/justice.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Hanged Man',
@@ -102,6 +114,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-hanged-man.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'Death',
@@ -110,6 +123,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/death.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'Temperance',
@@ -118,6 +132,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/temperance.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Devil',
@@ -126,6 +141,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-devil.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Tower',
@@ -134,6 +150,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-tower.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Star',
@@ -142,6 +159,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-star.jpg',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Moon',
@@ -150,6 +168,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-moon.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The Sun',
@@ -158,6 +177,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-sun.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'Judgement',
@@ -166,6 +186,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/judgement.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
     {
         name: 'The World',
@@ -174,6 +195,7 @@ const cards = [
         readingText: 'this is what would show up in the reading',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: './assets/the-world.webp',
+        altId: 'A picture of a young man walking with a dog',
     },
 ];
 

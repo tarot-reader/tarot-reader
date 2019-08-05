@@ -22,6 +22,23 @@ const info = {
         }
         return card;
     },
+    randomWholeNum(num) {
+        Math.floor(Math.random() * num);
+    },
+    randomCards(numOfCards) {
+        let pulledCards = [];
+
+        const cardArray = info.get(CARDS_KEY);
+        
+        for(let i = 0; i < numOfCards; i++) {
+        
+            const cardObject = cardArray[i];
+
+            pulledCards.push(cardObject);
+         
+        }
+        return pulledCards;
+    }
 
 };
 

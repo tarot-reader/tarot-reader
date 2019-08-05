@@ -1,6 +1,8 @@
 import info from '../src/data/data-manage.js';
 import cards from '../src/data/card-info.js';
 
+const CARDS_KEY = 'cards-key';
+
 const test = QUnit.test;
 
 info.storage = window.sessionStorage;
@@ -32,3 +34,15 @@ test('Is information being bootstrapped', function(assert) {
     assert.deepEqual(expected, actual);
 });
 
+test('Is the array 3 long', function(assert) {
+
+    info.getCards(CARDS_KEY);
+
+    const ranArray = info.randomCards(3);
+    
+    const expected = ranArray.length;
+
+    const actual = 3;
+    
+    assert.deepEqual(expected, actual);
+});
