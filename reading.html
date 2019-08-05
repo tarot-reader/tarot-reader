@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="/src/reading/reading.css">
 </head>
 <body>
+    <div class="parallax"></div>
     <header>
         <nav>
-            <a href="./">Home</a>
+            <a href="/welcome.html">Home</a>
             <a href="/library.html">Tarot Library</a>
             <a href="/about.html">About Us</a>
         </nav>
@@ -18,21 +19,31 @@
     </header>
     <main>
         <section id="tarot-reading">
-            <div id="left-card">
-                <img class="tarot-card" src="/assets/back.jpg" alt="temperance">
+            <div id="left-card-back">
+                <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
-            <div id="middle-card">
-                <img class="tarot-card" src="/assets/back.jpg" alt="the devil">
+            <div id="middle-card-back">
+                <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
-            <div id="left-card">
-                <img class="tarot-card" src="/assets/back.jpg" alt="the lovers">
+            <div id="right-card-back">
+                <img class="tarot-card" src="/assets/back.png" alt="">
+            </div>
+        
+            <div class="hidden" id="left-card-face">
+                <img class="tarot-card" src="/assets/temperance.jpg" alt="">
+            </div>
+            <div class="hidden" id="middle-card-face">
+                <img class="tarot-card" src="/assets/the-devil.jpg" alt="">
+            </div>
+            <div class="hidden" id="right-card-face">
+                <img class="tarot-card" src="/assets/the-lovers.jpg" alt="">
             </div>
         </section>
         <section class="button">
-            <button>Get Reading</button>
+            <button id="render-reading">Get Reading</button>
         </section>
 
     </main>
-    
+   <script src="/src/reading/render-reading.js" type="module"></script> 
 </body>
 </html>
