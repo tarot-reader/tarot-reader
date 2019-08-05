@@ -39,10 +39,12 @@ test('Is the array 3 long', function(assert) {
     info.getCards(CARDS_KEY);
 
     const ranArray = info.randomCards(3);
-    
+
     const expected = ranArray.length;
 
     const actual = 3;
     
     assert.deepEqual(expected, actual);
 });
+
+

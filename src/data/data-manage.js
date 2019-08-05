@@ -2,6 +2,7 @@
 import cards from './card-info.js';
 
 const CARDS_KEY = 'cards-key';
+const REMAINING_CARDS = 'remaining-cards';
 
 const info = {
     storage: window.localStorage,
@@ -23,22 +24,29 @@ const info = {
         return card;
     },
     randomWholeNum(num) {
-        Math.floor(Math.random() * num);
+        return Math.floor(Math.random() * num);
     },
     randomCards(numOfCards) {
         let pulledCards = [];
-
+        info.getCards();
         const cardArray = info.get(CARDS_KEY);
-        
+        const cardCopy = cardArray.slice();
         for(let i = 0; i < numOfCards; i++) {
-        
-            const cardObject = cardArray[i];
-
+            let num = 23;
+            num--;
+            const randomNumber = info.randomWholeNum(num);
+           
+            const cardObject = cardCopy[randomNumber];
+            cardCopy.splice(randomNumber, 1);
+            info.save(REMAINING_CARDS, cardCopy);
+          
             pulledCards.push(cardObject);
-         
+            
+    
         }
         return pulledCards;
     }
+
 
 };
 
