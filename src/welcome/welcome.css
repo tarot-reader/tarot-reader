@@ -40,28 +40,34 @@ main {
     justify-content: space-between;
     line-height: 16pt;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     color: rgb(252, 228, 245);
     font-family: 'Roboto', sans-serif;
     text-shadow: 0 0 2px #816b75;
-    border-radius: 5px;
 }
 
 #welcome-text {
     margin-left: 5px;
-    background-color:  rgba(0, 0, 0, 0.644);
+    background-color:  rgba(0, 0, 0, 0.479);
     text-align: left;
     justify-items: left;
-    width: 20%;
+    line-height: 18pt;
+    width: 19%;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 form {
-    position: fixed;
+    position: absolute;
     background-color:  rgba(0, 0, 0, 0.644);
     padding: 5px;
+    height: 200px;
     left: 35%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 20vh;
+    border-radius: 5px;
 }
 
 input[type='submit'] {
