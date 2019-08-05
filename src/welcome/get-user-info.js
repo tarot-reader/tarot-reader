@@ -6,7 +6,7 @@ const form = document.getElementById('user-info');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formData = new FormData(form);
+    // const formData = new FormData(form);
 
     // const info = {
     //     name: formData.get('name'),
