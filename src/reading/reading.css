@@ -1,0 +1,29 @@
+
+header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tarot-card {
+    height: 500px;
+}
+
+#tarot-reading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+
+.button {
+    text-align: center;
+}
+
+#middle-card {
+    margin-top: 30px;
+}
+
+#left-card, #right-card {
+    margin-top: 150px;
+}
