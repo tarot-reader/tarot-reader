@@ -15,7 +15,7 @@ test('Render one card', assert => {
         imgSrc: 'assets/the-fool.webp',
         altId: 'The Fool'
     };
-    const expected = '<div class="card"><img src="assets/the-fool.webp" alt="The Fool"><p>Inexperience, one seeking fulfillment, foolishness.</p></div>';
+    const expected = '<div class="card" id="The Fool"><img src="assets/the-fool.webp" alt="The Fool"><p>Inexperience, one seeking fulfillment, foolishness.</p></div>';
     
     // act
     const rendered = renderCard(toRender);
