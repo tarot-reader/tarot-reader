@@ -16,8 +16,7 @@ function showFaceCards() {
     const image1 = threeCardArray[0].imgSrc;
     const image2 = threeCardArray[1].imgSrc;
     const image3 = threeCardArray[2].imgSrc;
-    
-    console.log(image1, image2, image3);
+
     middleCardFace.src = image1;
     rightCardFace.src = image2;
     leftCardFace.src = image3;
