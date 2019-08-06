@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
+
 header {
     display: flex;
     height: 200px;
     background: black;
-    color: white;
+    color: rgba(253, 243, 250, 0.952);
     width: 100%;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
 
 h1 {
@@ -14,6 +18,18 @@ nav {
     margin-top: 50px;
     margin-left: 1rem;
     font-size: 2rem;
+}
+
+a {
+    text-decoration: underline;
+    color: rgba(253, 243, 250, 0.952);
+}
+
+body {
+    background-image: url("../../assets/library-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 main {
@@ -40,7 +56,10 @@ img {
 }
 
 p {
-    background-color: white;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 footer {
@@ -49,5 +68,7 @@ footer {
 }
 
 .birthday {
-    border: 5px solid yellow;
+    border: 5px solid rgba(253, 243, 250, 0.952);
+    padding: 5px;
+    box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
