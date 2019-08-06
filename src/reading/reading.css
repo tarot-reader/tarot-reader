@@ -1,4 +1,17 @@
 
+body {
+    font-family: sans-serif;
+    background-image: url('/assets/welcome-background.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100vw;
+    margin: auto;
+    
+}
+
 header {
     text-align: center;
     max-width: 900px;
@@ -9,21 +22,58 @@ header {
     height: 500px;
 }
 
+main {
+    background-image: url('/assets/vintage-wp.jpeg');
+    background-repeat: repeat;
+    border-radius: 15px;
+    opacity: .95;
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
 #tarot-reading {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .button {
     text-align: center;
 }
 
-#middle-card {
+#render-reading {
+    margin-top: 80px;
+    font-size: 1.2em;
+    width: 180px;
+    height: 80px;
+    background-color:goldenrod;
+    color: brown;
+    cursor: pointer;
+}
+
+#middle-card-back, #middle-card-face {
     margin-top: 30px;
 }
 
-#left-card, #right-card {
+#left-card-back, #right-card-back, 
+#left-card-face, #right-card-face {
     margin-top: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+.flipped {
+    -moz-transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+
+.text-reading {
+   background-color: aliceblue;
 }
