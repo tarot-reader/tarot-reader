@@ -8,30 +8,51 @@ const middleCardBack = document.getElementById('middle-card-back');
 const rightCardBack = document.getElementById('right-card-back');
 const leftCardBack = document.getElementById('left-card-back');
 
-const threeCardArray = info.randomCards(3);
+const pastText = document.getElementById('past');
+const presentText = document.getElementById('present');
+const futureText = document.getElementById('future');
+const readingVisible = document.getElementById('reading-text');
 
+const faceDownArray = [rightCardBack, middleCardBack, leftCardBack];
+const faceUpArray = [rightCardFace, middleCardFace, leftCardFace];
+const textArray = [pastText, presentText, futureText];
 
 function showFaceCards() {
+    const threeCardArray = info.randomCards(3);
+    for(let i = 0; i < threeCardArray.length; i++) {
+        const isFlipped = info.randomWholeNum(2);
+        const cardImageSrc = threeCardArray[i].imgSrc;
+        const cardWholeObject = threeCardArray[i];
+        const cardOnPage = faceUpArray[i];
+        const textDiv = textArray[i];
+        
+        cardOnPage.src = cardImageSrc;
+        if(isFlipped === 1) {
+            cardOnPage.classList.add('flipped');
+            textDiv.textContent = cardWholeObject.readingReversed;
+            readingVisible.classList.remove('hidden');
 
-    const image1 = threeCardArray[0].imgSrc;
-    const image2 = threeCardArray[1].imgSrc;
-    const image3 = threeCardArray[2].imgSrc;
+        } else {
+            cardOnPage.classList.remove('flipped');
+            textDiv.textContent = cardWholeObject.readingText;
+            readingVisible.classList.remove('hidden');
+        }
+    }
 
-    middleCardFace.src = image1;
-    rightCardFace.src = image2;
-    leftCardFace.src = image3;
-    
 }
 
 function hideBackCards() {
-    middleCardBack.classList.add('hidden');
-    rightCardBack.classList.add('hidden');
-    leftCardBack.classList.add('hidden');
+    for(let i = 0; i < faceDownArray.length; i++) {
+        let cardBack = faceDownArray[i];
+        cardBack.classList.add('hidden');
+    }
+
 }
 
 renderReading.addEventListener('click', event => {
     event.preventDefault();
     showFaceCards();
     hideBackCards();
+    
 
 });
