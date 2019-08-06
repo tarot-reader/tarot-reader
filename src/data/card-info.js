@@ -5,7 +5,7 @@ const cards = [
         description: 'The Fool description.',
         readingText: 'this is what The Fool would show up in the reading',
         readingReversed: 'this is what The Fool shows if the card is upside down',
-        imgSrc: './assets/the-fool.webp',
+        imgSrc: '/assets/the-fool.webp',
         altId: 'A picture of the fool card',
     },
     {
@@ -14,7 +14,7 @@ const cards = [
         description: 'The Magician description.',
         readingText: 'this is what The Magician would show up in the reading',
         readingReversed: 'this is what The Magician shows if the card is upside down',
-        imgSrc: './assets/the-magician.webp',
+        imgSrc: '/assets/the-magician.webp',
         altId: 'A picture of the magician card',
     },
     {
@@ -23,7 +23,7 @@ const cards = [
         description: 'The High Priestess description.',
         readingText: 'this is what The High Priestess would show in the reading',
         readingReversed: 'this is what The High Priestess shows if the card is upside down',
-        imgSrc: './assets/the-high-priestess.webp',
+        imgSrc: '/assets/the-high-priestess.webp',
         altId: 'A picture of The High Priestess',
     },
     {
@@ -32,7 +32,7 @@ const cards = [
         description: 'The Empress description.',
         readingText: 'this is what would The Empress shows in the reading',
         readingReversed: 'this is what The Empress shows if the card is upside down',
-        imgSrc: './assets/the-empress.webp',
+        imgSrc: '/assets/the-empress.webp',
         altId: 'A picture of The Empress',
     },
     {
@@ -41,7 +41,7 @@ const cards = [
         description: 'The Emperor description.',
         readingText: 'this is what The Emperor shows in the reading',
         readingReversed: 'this is what The Emperor shows if the card is upside down',
-        imgSrc: './assets/the-emperor.webp',
+        imgSrc: '/assets/the-emperor.webp',
         altId: 'A picture of The Emperor',
     },
     {
@@ -50,7 +50,7 @@ const cards = [
         description: 'The Hierophant description.',
         readingText: 'this is what The Hierophant would show in the reading',
         readingReversed: 'this is what The Hierophant shows if the card is upside down',
-        imgSrc: './assets/the-hierophant.jpg',
+        imgSrc: '/assets/the-hierophant.jpg',
         altId: 'A picture of The Hierophant',
     },
     {
@@ -59,7 +59,7 @@ const cards = [
         description: 'The Lovers description.',
         readingText: 'this is what The Lovers would show in the reading',
         readingReversed: 'this is what shows up if The Lovers the card is upside down',
-        imgSrc: './assets/the-lovers.jpg',
+        imgSrc: '/assets/the-lovers.jpg',
         altId: 'A picture of The Lovers',
     },
     {
@@ -68,7 +68,7 @@ const cards = [
         description: 'The Chariot description.',
         readingText: 'this is what The Chariot would show up in the reading',
         readingReversed: 'this is what The Chariot shows if the card is upside down',
-        imgSrc: './assets/the-chariot.webp',
+        imgSrc: '/assets/the-chariot.webp',
         altId: 'A picture of The Chariot',
     },
     {
@@ -77,7 +77,7 @@ const cards = [
         description: 'Strength description.',
         readingText: 'this is what Strength would show up in the reading',
         readingReversed: 'this is what shows up if the Strength card is upside down',
-        imgSrc: './assets/strength.webp',
+        imgSrc: '/assets/strength.webp',
         altId: 'A picture of Strength',
     },
     {
@@ -86,7 +86,7 @@ const cards = [
         description: 'The Hermit description.',
         readingText: 'this is what The Hermit would show up in the reading',
         readingReversed: 'this is what shows up if the card The Hermit is upside down',
-        imgSrc: './assets/the-hermit.webp',
+        imgSrc: '/assets/the-hermit.webp',
         altId: 'A picture of The Hermit',
     },
     {
@@ -95,7 +95,7 @@ const cards = [
         description: 'Wheel of Fortune description.',
         readingText: 'this is what Wheel of Fortune would show up in the reading',
         readingReversed: 'this is what shows up if the card Wheel of Fortune is upside down',
-        imgSrc: './assets/wheel-of-fortune.jpg',
+        imgSrc: '/assets/wheel-of-fortune.jpg',
         altId: 'A picture of Wheel of Fortune',
     },
     {
@@ -104,7 +104,7 @@ const cards = [
         description: 'Justice description.',
         readingText: 'this is what Justice would show up in the reading',
         readingReversed: 'this is what shows up if the Justice card is upside down',
-        imgSrc: './assets/justice.webp',
+        imgSrc: '/assets/justice.webp',
         altId: 'A picture of Justice',
     },
     {
@@ -113,7 +113,7 @@ const cards = [
         description: 'The Hanged Man description.',
         readingText: 'this is what would The Hanged Man show up in the reading',
         readingReversed: 'this is what shows up if the The Hanged Man card is upside down',
-        imgSrc: './assets/the-hanged-man.jpg',
+        imgSrc: '/assets/the-hanged-man.jpg',
         altId: 'A picture of The Hanged Man',
     },
     {
@@ -122,7 +122,7 @@ const cards = [
         description: 'Death description.',
         readingText: 'this is what Death would show up in the reading',
         readingReversed: 'this is what shows up if the Death card is upside down',
-        imgSrc: './assets/death.webp',
+        imgSrc: '/assets/death.webp',
         altId: 'A picture of Death',
     },
     {
@@ -131,7 +131,7 @@ const cards = [
         description: 'Temperance description.',
         readingText: 'this is what Temperance would show up in the reading',
         readingReversed: 'this is what shows up if the Temperance card is upside down',
-        imgSrc: './assets/temperance.jpg',
+        imgSrc: '/assets/temperance.jpg',
         altId: 'A picture of Temperance',
     },
     {
@@ -140,7 +140,7 @@ const cards = [
         description: 'The Devil description.',
         readingText: 'this is what The Devil would show up in the reading',
         readingReversed: 'this is what shows up if The Devil card is upside down',
-        imgSrc: './assets/the-devil.jpg',
+        imgSrc: '/assets/the-devil.jpg',
         altId: 'A picture of The Devil',
     },
     {
@@ -149,7 +149,7 @@ const cards = [
         description: 'The Tower description.',
         readingText: 'this is what The Tower would show up in the reading',
         readingReversed: 'this is what shows up if the The Tower card is upside down',
-        imgSrc: './assets/the-tower.jpg',
+        imgSrc: '/assets/the-tower.jpg',
         altId: 'A picture of The Tower',
     },
     {
@@ -158,7 +158,7 @@ const cards = [
         description: 'The Star description.',
         readingText: 'this is what The Star would show up in the reading',
         readingReversed: 'this is what shows up if the The Star card is upside down',
-        imgSrc: './assets/the-star.jpg',
+        imgSrc: '/assets/the-star.jpg',
         altId: 'A picture of The Star',
     },
     {
@@ -167,7 +167,7 @@ const cards = [
         description: 'The Moon description.',
         readingText: 'this is what The Moon would show up in the reading',
         readingReversed: 'this is what shows up if the The Moon card is upside down',
-        imgSrc: './assets/the-moon.webp',
+        imgSrc: '/assets/the-moon.webp',
         altId: 'A picture of The Moon',
     },
     {
@@ -176,7 +176,7 @@ const cards = [
         description: 'The Sun description.',
         readingText: 'this is what The Sun would show up in the reading',
         readingReversed: 'this is what shows up if the The Sun card is upside down',
-        imgSrc: './assets/the-sun.webp',
+        imgSrc: '/assets/the-sun.webp',
         altId: 'A picture of The Sun',
     },
     {
@@ -185,7 +185,7 @@ const cards = [
         description: 'Judgement description.',
         readingText: 'this is what Judgement would show up in the reading',
         readingReversed: 'this is what shows up if the Judgement card is upside down',
-        imgSrc: './assets/judgement.webp',
+        imgSrc: '/assets/judgement.webp',
         altId: 'A picture of Judgement',
     },
     {
@@ -194,7 +194,7 @@ const cards = [
         description: 'The World description.',
         readingText: 'this is what The World would show up in the reading',
         readingReversed: 'this is what shows up if the The World card is upside down',
-        imgSrc: './assets/the-world.webp',
+        imgSrc: '/assets/the-world.webp',
         altId: 'A picture of ',
     },
 ];
