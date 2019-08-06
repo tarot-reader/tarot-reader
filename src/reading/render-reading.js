@@ -1,4 +1,5 @@
 import info from '../data/data-manage.js';
+info.getCards();
 
 const renderReading = document.getElementById('render-reading');
 const middleCardFace = document.getElementById('middle-card-face');
