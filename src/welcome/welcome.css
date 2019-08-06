@@ -24,8 +24,19 @@ header {
     text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
 
+h1 {
+    padding-left: 10px;
+}
+
+nav {
+    width: 70%;
+    margin: auto;
+}
+
 a {
-    margin-top: 35px;
+    float: right;
+    justify-content: space-around;
+    margin: auto 3%;
     text-decoration: underline;
     color: rgba(253, 243, 250, 0.952);
 }
