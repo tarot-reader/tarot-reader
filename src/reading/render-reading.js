@@ -60,7 +60,7 @@ function showBackCards() {
 
 function hideFaceCards() {
     for(let i = 0; i < faceUpArray.length; i++) {
-        let cardFace =  faceUpArray[i];
+        let cardFace = faceUpArray[i];
         cardFace.classList.add('hidden');
     }
 }
@@ -74,6 +74,7 @@ renderReading.addEventListener('click', event => {
 });
 
 resetReading.addEventListener('click', event => {
+    event.preventDefault();
     showBackCards();
     hideFaceCards();
     resetReading.classList.add('hidden');
