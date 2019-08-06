@@ -5,10 +5,16 @@ body {
     background: rgb(0, 0, 0);
 }
 
-#tarot {
+header {
     width: 100vw;
-    height: 8vh;
     padding-top: 15px;
+}
+
+#tarot {
+    width: 100%;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 5vh;
     background-color: rgba(29, 6, 32, 0.342);
 }
 
