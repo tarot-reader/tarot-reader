@@ -1,4 +1,5 @@
 import info from '../data/data-manage.js';
+info.getCards();
 
 const renderReading = document.getElementById('render-reading');
 const middleCardFace = document.getElementById('middle-card-face');
@@ -15,7 +16,7 @@ const readingVisible = document.getElementById('reading-text');
 
 const faceDownArray = [rightCardBack, middleCardBack, leftCardBack];
 const faceUpArray = [rightCardFace, middleCardFace, leftCardFace];
-const textArray = [pastText, presentText, futureText];
+const textArray = [futureText, presentText, pastText];
 
 function showFaceCards() {
     const threeCardArray = info.randomCards(3);
