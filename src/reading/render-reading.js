@@ -27,7 +27,6 @@ function showFaceCards() {
         const cardWholeObject = threeCardArray[i];
         const cardOnPage = faceUpArray[i];
         const textDiv = textArray[i];
-        
         cardOnPage.src = cardImageSrc;
         if(isFlipped === 1) {
             cardOnPage.classList.add('flipped');
