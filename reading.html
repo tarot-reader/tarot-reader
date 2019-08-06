@@ -29,19 +29,25 @@
                 <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
         
-            <div class="hidden" id="left-card-face">
-                <img class="tarot-card" src="/assets/temperance.jpg" alt="">
+            <div >
+                <img class="tarot-card" id="left-card-face" src="" alt="">
             </div>
-            <div class="hidden" id="middle-card-face">
-                <img class="tarot-card" src="/assets/the-devil.jpg" alt="">
+            <div >
+                <img class="tarot-card" id="middle-card-face" src="" alt="">
             </div>
-            <div class="hidden" id="right-card-face">
-                <img class="tarot-card" src="/assets/the-lovers.jpg" alt="">
+            <div >
+                <img class="tarot-card" id="right-card-face" src="" alt="">
             </div>
         </section>
         <section class="button">
             <button id="render-reading">Get Reading</button>
         </section>
+
+        <div id="reading-text" class="hidden text-reading">
+            <p>Your Past <p id="past"></p></p>
+            <p>Your Present <p id="present"></p></p>
+            <p>Your Future <p id="future"></p></p>
+        </div>
 
     </main>
    <script src="/src/reading/render-reading.js" type="module"></script> 
