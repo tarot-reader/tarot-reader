@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
-
+ 
 body {
     position: static;
     background: rgb(0, 0, 0);
+    overflow-x: hidden
+    
 }
 
 header {
@@ -28,27 +30,22 @@ div {
     text-align: center;
 }
 
-img {
-    height: 60vw;
-    max-height: 650px;
-}
-
 main {
     position: static;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     margin: 0 auto;
     justify-content: space-between;
     height: 90vh;
     margin-top: 20px;
+    max-width: 90vw;
 }
 
 #welcome-text {
     margin-left: 5px;
-    overflow: scroll;
     text-align: center;
+    overflow-y: scroll;
     width: 10vw;
     height: 40vh;
     padding: 15px;
@@ -86,4 +83,9 @@ input[type='submit']:hover {
 
 legend {
     text-align: left;
+}
+
+img {
+    height: 60vw;
+    max-height: 650px;
 }

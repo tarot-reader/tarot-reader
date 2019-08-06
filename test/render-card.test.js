@@ -1,4 +1,5 @@
 import renderCard from '../src/library/render-card.js';
+import renderHand from '../src/hands/render-hands.js';
 
 const test = QUnit.test;
 
@@ -19,6 +20,48 @@ test('Render one card', assert => {
     // act
     const rendered = renderCard(toRender);
     const html = rendered.outerHTML;
+    
+    // assert
+    assert.equal(expected, html);
+});
+
+test('Render hand of cards', assert => {
+
+    const testObject1 = {
+        name: 'The Fool',
+        description: 'Inexperience, one seeking fulfillment, foolishness.',
+        imgSrc: 'assets/the-fool.webp',
+        altId: 'The Fool',
+        side: 'Up'
+    };
+    
+    const testObject2 = {
+        name: 'The Fool',
+        description: 'Inexperience, one seeking fulfillment, foolishness.',
+        imgSrc: 'assets/the-fool.webp',
+        altId: 'The Fool',
+        side: 'Down'
+    };
+    
+    const testObject3 = {
+        name: 'The Fool',
+        description: 'Inexperience, one seeking fulfillment, foolishness.',
+        imgSrc: 'assets/the-fool.webp',
+        altId: 'The Fool',
+        side: 'Up'
+    };
+    
+    const testObjectArray = [testObject1, testObject2, testObject3];
+    
+    const testObjectArrayTwo = [testObject3, testObject2, testObject1];
+    
+    const testArrayArray = [testObjectArray, testObjectArrayTwo];
+    
+    
+    const resultOf = renderHand(testArrayArray);
+
+    const expected = '<div class="hand0"><img src="assets/the-fool.webp" alt="The Fool"><img src="assets/the-fool.webp" alt="The Fool"><img src="assets/the-fool.webp" alt="The Fool"><p>a word</p></div>';
+    const html = resultOf.outerHTML;
     
     // assert
     assert.equal(expected, html);
