@@ -41,10 +41,8 @@ const info = {
             const cardObject = cardCopy[randomNumber];
             cardCopy.splice(randomNumber, 1);
             info.save(REMAINING_CARDS, cardCopy);
-          
             pulledCards.push(cardObject);
-            
-    
+            info.save('hand', pulledCards); 
         }
         return pulledCards;
     }
