@@ -9,13 +9,12 @@ test('Render one card', assert => {
     const toRender = {
         name: 'The Fool',
         number: 0,
-        description: 'Inexperience, one seeking fulfillment, foolishness.',
-        readingText: 'this is what would show up in the reading',
+        readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: 'assets/the-fool.webp',
         altId: 'The Fool'
     };
-    const expected = '<div class="card" id="The Fool"><img src="assets/the-fool.webp" alt="The Fool"><p>Inexperience, one seeking fulfillment, foolishness.</p></div>';
+    const expected = '<div class="card" id="The Fool"><img src="assets/the-fool.webp" alt="The Fool"><p>Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.</p></div>';
     
     // act
     const rendered = renderCard(toRender);
