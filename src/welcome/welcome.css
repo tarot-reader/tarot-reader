@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
 body {
-    position: relative;
-    left: -8px;
-    top: -21px;
+    position: static;
+    background: black;
+}
+
+div {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    margin: 10vh auto;
+    justify-content: center;
+    text-align: center;
 }
 
 img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    height: 110vh;
-    width: 100vw;
+    width: 80vw;
 }
 
 main {
-    width: 90%;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

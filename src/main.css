@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
-
+body {
+    margin: 0;
+}
 header {
     display: flex;
     justify-content: space-around;
+    height: 10vh;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.678);
     color: rgba(253, 243, 250, 0.952);
     font-family: 'Nunito', sans-serif;
@@ -10,6 +14,10 @@ header {
 }
 
 h1 {
+    height: 80%;
+    width: 50%;
+    margin: 9px auto;
+    overflow: hidden;
     padding-left: 10px;
 }
 
