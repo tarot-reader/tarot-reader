@@ -1,6 +1,10 @@
 
-body {
+html {
     font-family: sans-serif;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1c82fa5580a57fe2c7d5462d7458f731152860f9
     background-image: url('/assets/about-us-background.jpg');
     height: 100%;
     background-size: cover;
@@ -9,53 +13,37 @@ body {
     background-attachment: fixed;
     max-width: 100vw;
     margin: auto;
-    
+
 }
 
 header {
     text-align: center;
-    max-width: 900px;
+    max-width: 75vw;
     margin: 0 auto;
 }
 
-.tarot-card {
-    height: 500px;
+h1 {
+    display: block;
+    text-align: center;
 }
+
 
 main {
     max-width: 960px;
     margin: auto;
-    padding: 20px;
+    display: block;
 }
 
-#tarot-reading {
+.tarot-card {
+    margin: 2vw 2vh;
+    height: 40vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    
 }
 
 .button {
     text-align: center;
-}
-
-#render-reading {
-    margin-top: 80px;
-    font-size: 1.2em;
-    width: 180px;
-    height: 80px;
-    background-color:goldenrod;
-    color: brown;
-    cursor: pointer;
-}
-
-#middle-card-back, #middle-card-face {
-    margin-top: 30px;
-}
-
-#left-card-back, #right-card-back, 
-#left-card-face, #right-card-face {
-    margin-top: 150px;
 }
 
 .hidden {
@@ -64,12 +52,31 @@ main {
 
 .flipped {
     -moz-transform: rotate(180deg);
--webkit-transform: rotate(180deg);
--o-transform: rotate(180deg);
--ms-transform: rotate(180deg);
-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .text-reading {
-   background-color: aliceblue;
+    background-color: aliceblue;
+}
+
+#tarot-reading {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#render-reading {
+    margin-top: 80px;
+    font-size: 1.2em;
+    width: 180px;
+    height: 80px;
+    background-color:#5E5359;
+    color: #FFB9DC;
+    text-shadow: 0 0 5px black, 0 0 10px #ff0080;
+    cursor: pointer;
+    border-radius: 6px;
 }

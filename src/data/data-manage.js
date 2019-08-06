@@ -29,8 +29,10 @@ const info = {
     randomCards(numOfCards) {
         let pulledCards = [];
         info.getCards();
+
         const cardArray = info.get(CARDS_KEY);
         const cardCopy = cardArray.slice();
+        
         for(let i = 0; i < numOfCards; i++) {
             let num = 23;
             num--;

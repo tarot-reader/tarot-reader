@@ -1,59 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
 body {
-    position: relative;
-    left: -8px;
-    top: -21px;
+    position: static;
+    background: rgb(0, 0, 0);
+}
+
+#tarot {
+    width: 100vw;
+    height: 8vh;
+    padding-top: 15px;
+    background-color: rgba(29, 6, 32, 0.342);
+}
+
+div {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    margin: 15vh auto;
+    justify-content: center;
+    text-align: center;
 }
 
 img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    height: 110vh;
-    width: 100vw;
+    height: 60vw;
+    max-height: 650px;
 }
 
 main {
-    width: 90%;
+    position: static;
+    width: 100vw;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    margin: 0 auto;
     justify-content: space-between;
-    line-height: 16pt;
-    height: 100%;
+    height: 90vh;
     margin-top: 20px;
 }
 
 #welcome-text {
     margin-left: 5px;
-    background-color:  rgba(0, 0, 0, 0.479);
-    text-align: left;
-    justify-items: left;
-    line-height: 18pt;
-    width: 19%;
+    overflow: scroll;
+    text-align: center;
+    width: 10vw;
+    height: 40vh;
     padding: 15px;
+    background-color: rgba(29, 6, 32, 0.342);
+    border: 1px solid;
     border-radius: 5px;
 }
 
 form {
-    position: absolute;
-    background-color:  rgba(0, 0, 0, 0.644);
     padding: 5px;
-    height: 200px;
+    height: 23vh;
     left: 35%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 2vh;
+    background-color:  rgba(29, 6, 32, 0.342);
     border-radius: 5px;
 }
 
 button {
     color: rgb(252, 228, 245);
     background-color: black;
-    width: 100px;
-    height: 30px;
+    width: 50%;
+    height: 5vh;
 }
 
 button:hover {
