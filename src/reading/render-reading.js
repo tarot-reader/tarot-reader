@@ -15,7 +15,7 @@ const readingVisible = document.getElementById('reading-text');
 
 const faceDownArray = [rightCardBack, middleCardBack, leftCardBack];
 const faceUpArray = [rightCardFace, middleCardFace, leftCardFace];
-const textArray = [pastText, presentText, futureText];
+const textArray = [futureText, presentText, pastText];
 
 function showFaceCards() {
     const threeCardArray = info.randomCards(3);
