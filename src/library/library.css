@@ -1,35 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
-header {
-    display: flex;
-    height: 200px;
-    background: black;
-    color: rgba(253, 243, 250, 0.952);
-    width: 100%;
-    font-family: 'Nunito', sans-serif;
-    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-nav {
-    margin-top: 50px;
-    margin-left: 1rem;
-    font-size: 2rem;
-}
-
 a {
     text-decoration: underline;
     color: rgba(253, 243, 250, 0.952);
 }
 
 body {
-    background-image: url("../../assets/library-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+    background-color: rgb(44, 42, 42);
 }
 
 main {
@@ -38,7 +15,7 @@ main {
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 4rem;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 img {
@@ -56,10 +33,11 @@ img {
 }
 
 p {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: rgb(210,180,140);
     padding: 1rem;
     border-radius: 5px;
+    border: dashed 1px;
 }
 
 footer {
