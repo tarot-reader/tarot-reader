@@ -18,3 +18,5 @@ form.addEventListener('submit', (event) => {
     window.location.assign('../reading.html');
     form.reset();
 });
+
+export default userForm;
