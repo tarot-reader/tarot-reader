@@ -45,4 +45,9 @@ p {
 
 footer {
     height: 100px;
+
+}
+
+.birthday {
+    border: 5px solid yellow;
 }
