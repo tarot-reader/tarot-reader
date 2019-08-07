@@ -28,3 +28,9 @@ button {
 .hidden {
     display: none;
 }
+
+#win-message {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
