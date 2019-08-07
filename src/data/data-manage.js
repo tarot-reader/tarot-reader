@@ -1,4 +1,3 @@
-
 import cards from './card-info.js';
 
 const CARDS_KEY = 'cards-key';
@@ -31,8 +30,12 @@ const info = {
         info.getCards();
         const cardArray = info.get(CARDS_KEY);
         const cardCopy = cardArray.slice();
+<<<<<<< HEAD
+=======
+        let num = 23;
+        
+>>>>>>> origin/tuesday
         for(let i = 0; i < numOfCards; i++) {
-            let num = 23;
             num--;
             const randomNumber = info.randomWholeNum(num);
            
