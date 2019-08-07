@@ -50,7 +50,6 @@ const info = {
             let userName = info.get('names');
             if(userName === null) {
                 userName = 'stranger';
-                return userName;
             }
 
             const cardObject = cardCopy[randomNumber];

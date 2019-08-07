@@ -18,16 +18,10 @@ header {
     margin: 0 auto;
 }
 
-
 .tarot-card {
     height: 500px;
 
 }
-
-body {
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.363);
-
 }
 
 main {
@@ -36,16 +30,19 @@ main {
     padding: 20px;
 }
 
+.tarot-card {
+    margin: 20px auto;
+    height: 40vh;
+    display: flex;
+}
+
 #tarot-reading {
     display: flex;
-<<<<<<< HEAD
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-=======
     justify-content: center;
     border-radius: 5px;
->>>>>>> origin/tuesday
 }
 
 .button {
@@ -66,11 +63,11 @@ main {
     margin-top: 30px;
 }
 
-<<<<<<< HEAD
 #left-card-back, #right-card-back, 
 #left-card-face, #right-card-face {
     margin-top: 150px;
-=======
+}
+
 .text-reading {
     position: relative;
     display: flex;
@@ -118,21 +115,25 @@ main {
     position: absolute;
     top: 0;
     left: 44vw;
->>>>>>> origin/tuesday
 }
 
+#tarot-reading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 .hidden {
     display: none;
 }
 
-<<<<<<< HEAD
 .flipped {
     -moz-transform: rotate(180deg);
 -webkit-transform: rotate(180deg);
 -o-transform: rotate(180deg);
 -ms-transform: rotate(180deg);
 transform: rotate(180deg);
-=======
+}
+
 #render-reading, #reset-reading {
     font-size: 1.2em;
     width: 180px;
@@ -142,7 +143,6 @@ transform: rotate(180deg);
     text-shadow: 0 0 5px black, 0 0 10px #ff0080;
     cursor: pointer;
     border-radius: 6px;
->>>>>>> origin/tuesday
 }
 
 .text-reading {
