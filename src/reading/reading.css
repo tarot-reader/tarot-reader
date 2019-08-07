@@ -9,11 +9,14 @@ html {
     max-width: 100vw;
     margin: auto;
 
+<<<<<<< HEAD
+.tarot-card {
+    height: 500px;
+=======
 }
+>>>>>>> f02e1e9ae9d699fb8a0b4ed3bde2233a9ff71cf2
 
-body {
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.363);
+}
 }
 
 main {
