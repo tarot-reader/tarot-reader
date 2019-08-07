@@ -14,7 +14,7 @@ test('test name', assert => {
         altId: 'A picture of the fool card',
     };
     const index = 1;
-    const expected = '<button value="The Fool" id="button1" class="hidden"><img src="/assets/the-fool.webp"></button>';
+    const expected = '<button value="The Fool" id="button1"><img src="/assets/back.png"><img src="/assets/the-fool.webp" class="hidden"></button>';
     
     // act
     const result = renderButton(card, index).outerHTML;
