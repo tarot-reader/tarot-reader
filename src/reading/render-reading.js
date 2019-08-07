@@ -2,7 +2,6 @@ import info from '../data/data-manage.js';
 info.getCards();
 
 const renderReading = document.getElementById('render-reading');
-const resetReading = document.getElementById('reset-reading');
 const middleCardFace = document.getElementById('middle-card-face');
 const rightCardFace = document.getElementById('right-card-face');
 const leftCardFace = document.getElementById('left-card-face');
@@ -27,6 +26,7 @@ function showFaceCards() {
         const cardWholeObject = threeCardArray[i];
         const cardOnPage = faceUpArray[i];
         const textDiv = textArray[i];
+        
         cardOnPage.src = cardImageSrc;
         if(isFlipped === 1) {
             cardOnPage.classList.add('flipped');
@@ -50,32 +50,10 @@ function hideBackCards() {
 
 }
 
-function showBackCards() {
-    for(let i = 0; i < faceDownArray.length; i++) {
-        let cardBack = faceDownArray[i];
-        cardBack.classList.remove('hidden');
-    }
-}
-
-function hideFaceCards() {
-    for(let i = 0; i < faceUpArray.length; i++) {
-        let cardFace = faceUpArray[i];
-        cardFace.classList.add('hidden');
-    }
-}
-
 renderReading.addEventListener('click', event => {
     event.preventDefault();
     showFaceCards();
     hideBackCards();
-    resetReading.classList.remove('hidden');
-    renderReading.classList.add('hidden');
-});
+    
 
-resetReading.addEventListener('click', event => {
-    event.preventDefault();
-    showBackCards();
-    hideFaceCards();
-    resetReading.classList.add('hidden');
-    renderReading.classList.remove('hidden');
 });

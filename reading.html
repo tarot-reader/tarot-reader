@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tarot Reading</title>
-    <link rel="stylesheet" href="/src/main.css">
+    <link rel="stylesheet" href="/src/master.css">
     <link rel="stylesheet" href="/src/reading/reading.css">
 </head>
 <body>
     <div class="parallax"></div>
     <header>
-        <h1>Your Tarot Reading</h1>
         <nav>
             <a href="/index.html">Home</a>
             <a href="/library.html">Tarot Library</a>
             <a href="/about-us.html">About Us</a>
         </nav>
+        <h1>Your Tarot Reading</h1>
     </header>
     <main>
         <section id="tarot-reading">
@@ -40,19 +40,15 @@
                 <img class="tarot-card" id="right-card-face" src="" alt="">
             </div>
         </section>
-        
+        <section class="button">
+            <button id="render-reading">Get Reading</button>
+        </section>
+
         <div id="reading-text" class="hidden text-reading">
             <p id="pt" class="ppf">Your Past <p id="past"></p></p>
             <p id="pret" class="ppf">Your Present <p id="present"></p></p>
             <p id="ft" class="ppf">Your Future <p id="future"></p></p>
         </div>
-
-        <section class="button">
-            <button id="render-reading">Get Reading</button>
-        </section>
-        <section class="button">
-                <button class="hidden" id="reset-reading">New Reading</button>
-        </section>
 
     </main>
    <script src="/src/reading/render-reading.js" type="module"></script> 
