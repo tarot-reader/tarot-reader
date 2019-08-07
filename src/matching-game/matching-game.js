@@ -10,6 +10,8 @@ const cardsDisplay = document.getElementById('cards-display');
 
 // get cards elements by class
 const cards = document.getElementsByClassName('card');
+const fronts = document.getElementsByClassName('front');
+const backs = document.getElementsByClassName('back');
 
 // duplicate array to make array of 16 cards
 const sixteenCardArray = [];
@@ -40,12 +42,15 @@ for(let i = 0; i < shuffledArray.length; i++){
 // on button click, reveal card and disable button. Add id to a revealed array.
 
 const cardArray = [...cards];
+console.log(cardArray);
 for(let i = 0; i < cardArray.length; i++) {
-    cardArray[i].addEventListener('click', displayCard);
+    cardArray[i].addEventListener('click', (event) => {
+        console.log(event.currentTarget);
+        const button = event.currentTarget;
+        button.childNodes[0].classList.add('hidden');
+        button.childNodes[1].classList.remove('hidden');
+    });
 }
 
-function displayCard() {
-    console.log('worked');
-}
 // on next button click, reveal card and check to see if it's a match. If it's a match, keep both cards revealed. If not, hide both cards again.
 // display win message with play again button 
