@@ -5,7 +5,25 @@ const eightCardArray = info.randomCards(8);
 console.log(eightCardArray);
 
 // duplicate array to make array of 16 cards
-// shuffle array
+const sixteenCardArray = [];
+for(let i = 0; i < eightCardArray.length; i++) {
+    sixteenCardArray.push(eightCardArray[i]);
+    sixteenCardArray.push(eightCardArray[i]);
+}
+console.log(sixteenCardArray);
+// shuffle array function from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
+function shuffle(array) {
+    let temporaryValue, randomIndex;
+    for(let i = 0; i < array.length; i++) {
+        randomIndex = Math.floor(Math.random() * i);
+        temporaryValue = array[i];
+        array[i] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+}
+const shuffledArray = shuffle(sixteenCardArray);
+console.log(shuffledArray);
 // render cards as buttons
 // on button click, reveal card and disable button. Add id to a revealed array.
 // on next button click, reveal card and check to see if it's a match. If it's a match, keep both cards revealed. If not, hide both cards again.
