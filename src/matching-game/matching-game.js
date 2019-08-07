@@ -40,12 +40,47 @@ for(let i = 0; i < shuffledArray.length; i++){
 // on button click, reveal card and disable button. Add id to a revealed array.
 
 const cardArray = [...cards];
+let openedCards = [];
+let openedButtons = [];
 for(let i = 0; i < cardArray.length; i++) {
-    cardArray[i].addEventListener('click', displayCard);
+    cardArray[i].addEventListener('click', (event) => {;
+        const button = event.currentTarget;
+        button.childNodes[0].classList.add('hidden');
+        button.childNodes[1].classList.remove('hidden');
+        openedCards.push(button.value);
+        openedButtons.push(button);
+        cardCheck();
+    });
 }
 
-function displayCard() {
-    console.log('worked');
+function cardCheck() {
+    if(openedCards.length < 2) {
+        return;
+    }
+
+    if(openedCards[0] === openedCards[1]) {
+        match();
+    } else {
+        unmatch();
+    }
+    openedCards = [];
+}
+function match() {
+    openedButtons[0].childNodes[1].classList.add('match');
+    openedButtons[1].childNodes[1].classList.add('match');
+    openedButtons[0].disabled = true;
+    openedButtons[1].disabled = true;
+    openedButtons = [];
+}
+function unmatch() {
+    setTimeout(() => {
+        openedButtons[0].childNodes[0].classList.remove('hidden');
+        openedButtons[0].childNodes[1].classList.add('hidden');
+        console.log(openedButtons[0].childNodes[0]);
+        openedButtons[1].childNodes[0].classList.remove('hidden');
+        openedButtons[1].childNodes[1].classList.add('hidden');
+        openedButtons = [];
+    }, 2000);
 }
 // on next button click, reveal card and check to see if it's a match. If it's a match, keep both cards revealed. If not, hide both cards again.
 // display win message with play again button 
