@@ -30,11 +30,8 @@ const info = {
         info.getCards();
         const cardArray = info.get(CARDS_KEY);
         const cardCopy = cardArray.slice();
-<<<<<<< HEAD
-=======
         let num = 23;
         
->>>>>>> origin/tuesday
         for(let i = 0; i < numOfCards; i++) {
             num--;
             const randomNumber = info.randomWholeNum(num);
