@@ -18,14 +18,16 @@ header {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
+
 .tarot-card {
     height: 500px;
-=======
+
+}
+
 body {
     height: 100vh;
     background: rgba(0, 0, 0, 0.363);
->>>>>>> origin/tuesday
+
 }
 
 main {
