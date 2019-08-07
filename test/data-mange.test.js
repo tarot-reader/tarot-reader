@@ -34,15 +34,36 @@ test('Is information being bootstrapped', function(assert) {
     assert.deepEqual(expected, actual);
 });
 
-test('Is the array 3 long', function(assert) {
 
+
+test('Is the object being altered?', function(assert) {
+
+    const cardArray = info.getCards();
+    const firstCard = cardArray[0];
+
+    info.save('user', 'Anne');
+
+    const user = info.get('user');
+    
     info.getCards(CARDS_KEY);
 
-    const ranArray = info.randomCards(3);
+    const testObject = firstCard;
 
-    const expected = ranArray.length;
+    firstCard.user = user;
+    firstCard.displayDirection = 'up';
 
-    const actual = 3;
+    const expected = {
+        user: 'Anne',
+        name: 'The Fool',
+        number: 0,
+        readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+        readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+        imgSrc: '/assets/the-fool.webp',
+        altId: 'A picture of the fool card',
+        displayDirection: 'up',
+    };
+
+    const actual = testObject;
     
     assert.deepEqual(expected, actual);
 });
