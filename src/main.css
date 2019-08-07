@@ -8,9 +8,9 @@ header {
     height: 10vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.747);
-    color: rgba(253, 243, 250, 0.952);
+    color: rgba(253, 204, 238, 0.979);
     font-family: 'Nunito', sans-serif;
-    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 3px #ff0080, 0 0 7px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080;
 }
 
 h1 {
