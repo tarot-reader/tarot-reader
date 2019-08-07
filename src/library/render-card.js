@@ -9,7 +9,7 @@ function renderCard(card) {
     div.appendChild(img);
 
     const p = document.createElement('p');
-    p.textContent = card.readingText;
+    p.textContent = card.description;
     div.appendChild(p);
 
     return div;

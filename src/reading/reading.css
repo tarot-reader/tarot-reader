@@ -1,36 +1,61 @@
 
-html {
+body {
     font-family: sans-serif;
     background-image: url('/assets/about-us-background.jpg');
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     max-width: 100vw;
     margin: auto;
-
+    
 }
 
-body {
-    height: 100vh;
+header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tarot-card {
+    height: 500px;
 }
 
 main {
     max-width: 960px;
     margin: auto;
-    display: block;
+    padding: 20px;
 }
 
-.tarot-card {
-    margin: 2vw 2vh;
-    height: 40vh;
+#tarot-reading {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .button {
     text-align: center;
+}
+
+#render-reading {
+    margin-top: 80px;
+    font-size: 1.2em;
+    width: 180px;
+    height: 80px;
+    background-color:goldenrod;
+    color: brown;
+    cursor: pointer;
+}
+
+#middle-card-back, #middle-card-face {
+    margin-top: 30px;
+}
+
+#left-card-back, #right-card-back, 
+#left-card-face, #right-card-face {
+    margin-top: 150px;
 }
 
 .hidden {
@@ -39,36 +64,12 @@ main {
 
 .flipped {
     -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+transform: rotate(180deg);
 }
 
 .text-reading {
-    background-color: aliceblue;
-}
-
-#tarot-reading {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    justify-content: space-between;
-}
-
-#render-reading, #reset-reading {
-    font-size: 1.2em;
-    width: 180px;
-    height: 80px;
-    background-color:#5E5359;
-    color: #FFB9DC;
-    text-shadow: 0 0 5px black, 0 0 10px #ff0080;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.hidden {
-    display: none;
+   background-color: aliceblue;
 }

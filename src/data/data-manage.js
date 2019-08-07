@@ -29,10 +29,8 @@ const info = {
     randomCards(numOfCards) {
         let pulledCards = [];
         info.getCards();
-
         const cardArray = info.get(CARDS_KEY);
         const cardCopy = cardArray.slice();
-        
         for(let i = 0; i < numOfCards; i++) {
             let num = 23;
             num--;
@@ -41,8 +39,10 @@ const info = {
             const cardObject = cardCopy[randomNumber];
             cardCopy.splice(randomNumber, 1);
             info.save(REMAINING_CARDS, cardCopy);
+          
             pulledCards.push(cardObject);
-            info.save('hand', pulledCards); 
+            
+    
         }
         return pulledCards;
     }
