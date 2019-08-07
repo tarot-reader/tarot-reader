@@ -2,7 +2,7 @@ import info from '../data/data-manage.js';
 
 // generate array of 8 cards
 const eightCardArray = info.randomCards(8);
-console.log (eightCardArray);
+console.log(eightCardArray);
 
 // duplicate array to make array of 16 cards
 // shuffle array
