@@ -29,7 +29,10 @@ function showFaceCards() {
         
         const cardOnPage = faceUpArray[i];
         const textDiv = textArray[i];
-       
+
+        
+        cardOnPage.src = cardImageSrc;
+ 
         const reverseRead = cardObject.readingReversed;
         
         const regularRead = cardObject.readingText;
@@ -61,6 +64,8 @@ function hideBackCards() {
 
 }
 
+
+   
 function showBackCards() {
     for(let i = 0; i < faceDownArray.length; i++) {
         let cardBack = faceDownArray[i];
@@ -98,4 +103,5 @@ resetReading.addEventListener('click', () => {
     resetReading.classList.add('hidden');
     readingVisible.classList.add('hidden');
     renderReading.classList.remove('hidden');
+
 });
