@@ -68,4 +68,13 @@ test('Is the object being altered?', function(assert) {
     assert.deepEqual(expected, actual);
 });
 
+test('Is information being bootstrapped', function(assert) {
+
+    const expected = info.getCards();
+
+    const actual = cards;
+    
+    assert.deepEqual(expected, actual);
+});
+
 
