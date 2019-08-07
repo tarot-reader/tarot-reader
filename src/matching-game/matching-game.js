@@ -8,6 +8,7 @@ console.log(eightCardArray);
 // get DOM element by ID
 const cardsDisplay = document.getElementById('cards-display');
 
+
 // get cards elements by class
 const cards = document.getElementsByClassName('card');
 
@@ -39,6 +40,7 @@ for(let i = 0; i < shuffledArray.length; i++){
     cardsDisplay.appendChild(button);
 }
 // on button click, reveal card and disable button. Add id to a revealed array.
+
 const cardArray = [...cards];
 for(let i = 0; i < cardArray.length; i++) {
     cardArray[i].addEventListener('click', displayCard());
