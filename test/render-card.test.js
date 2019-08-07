@@ -10,7 +10,7 @@ test('Render one card', assert => {
         name: 'The Fool',
         number: 0,
         description: 'Inexperience, one seeking fulfillment, foolishness.',
-        readingText: 'this is what would show up in the reading',
+        readingText: 'Inexperience, one seeking fulfillment, foolishness.',
         readingReversed: 'this is what shows up if the card is upside down',
         imgSrc: 'assets/the-fool.webp',
         altId: 'The Fool'
