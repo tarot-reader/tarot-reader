@@ -24,10 +24,9 @@ main {
 }
 
 .tarot-card {
-    margin: 2vw 2vh;
+    margin: 20px auto;
     height: 40vh;
     display: flex;
-    justify-content: center;
     border-radius: 5px;
 }
 
@@ -97,12 +96,10 @@ main {
 }
 
 #tarot-reading {
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
     justify-content: space-between;
+    align-content: center;
 }
 
 #render-reading, #reset-reading {
