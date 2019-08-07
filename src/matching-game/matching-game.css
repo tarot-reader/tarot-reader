@@ -24,3 +24,7 @@ button {
     width: 200px;
     height: 2rem;
 }
+
+.hidden {
+    display: none;
+}
