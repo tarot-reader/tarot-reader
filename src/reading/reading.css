@@ -14,6 +14,7 @@ html {
 
 body {
     height: 100vh;
+    background: rgba(0, 0, 0, 0.363);
 }
 
 main {
@@ -27,6 +28,7 @@ main {
     height: 40vh;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .button {
@@ -46,7 +48,52 @@ main {
 }
 
 .text-reading {
-    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    width: 60vw;
+    height: 30vh;
+    margin: 0 auto;
+    color: black;
+    text-shadow: none;
+    padding: 8px;
+}
+
+#past, #present, #future {
+    margin: 0 auto;
+    width: 60vw;
+    background-color: rgb(210,180,140);
+    border: 1px dashed black;
+    padding: 13px;
+}
+
+.ppf {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0 auto;
+    background-color: rgb(155, 128, 94);
+    border-radius: 2px;
+}
+
+#pt {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 2vw;
+}
+
+#pret {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 23vw;
+
+}
+
+#ft {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 44vw;
 }
 
 #tarot-reading {
@@ -62,7 +109,7 @@ main {
     font-size: 1.2em;
     width: 180px;
     height: 80px;
-    background-color:#5E5359;
+    background-color:rgb(44, 29, 38);
     color: #FFB9DC;
     text-shadow: 0 0 5px black, 0 0 10px #ff0080;
     cursor: pointer;
