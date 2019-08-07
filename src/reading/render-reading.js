@@ -2,6 +2,7 @@ import info from '../data/data-manage.js';
 info.getCards();
 
 const renderReading = document.getElementById('render-reading');
+const resetReading = document.getElementById('reset-reading');
 const middleCardFace = document.getElementById('middle-card-face');
 const rightCardFace = document.getElementById('right-card-face');
 const leftCardFace = document.getElementById('left-card-face');
