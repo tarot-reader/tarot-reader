@@ -25,6 +25,16 @@ const info = {
     randomWholeNum(num) {
         return Math.floor(Math.random() * num);
     },
+    isFlipped(object) {
+        const isFlipped = info.randomWholeNum(2);
+         
+        if(isFlipped === 1) {
+            object.displayDirection = 'upside-down';
+        } else {
+            object.displayDirection = 'upside-up';
+        }
+    
+    },
     randomCards(numOfCards) {
         let pulledCards = [];
         info.getCards();
@@ -34,18 +44,32 @@ const info = {
         
         for(let i = 0; i < numOfCards; i++) {
             num--;
+            
             const randomNumber = info.randomWholeNum(num);
            
+            let userName = info.get('names');
+            if(userName === null) {
+                userName = 'stranger';
+                return userName;
+            }
+
             const cardObject = cardCopy[randomNumber];
+            cardObject.user = userName;
+            info.isFlipped(cardObject);
+
             cardCopy.splice(randomNumber, 1);
             info.save(REMAINING_CARDS, cardCopy);
-          
+
+  
+
+
             pulledCards.push(cardObject);
+            info.save('hand', pulledCards); 
             
-    
+
         }
         return pulledCards;
-    }
+    },
 
 
 };
