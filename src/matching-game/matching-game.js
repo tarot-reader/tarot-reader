@@ -87,7 +87,6 @@ function unmatch() {
     setTimeout(() => {
         openedButtons[0].childNodes[0].classList.remove('hidden');
         openedButtons[0].childNodes[1].classList.add('hidden');
-        console.log(openedButtons[0].childNodes[0]);
         openedButtons[1].childNodes[0].classList.remove('hidden');
         openedButtons[1].childNodes[1].classList.add('hidden');
         openedButtons = [];
