@@ -1,5 +1,10 @@
+html {
+    background-image: url('/assets/about-us-background.jpg')
+}
+
 body {
-    background-color: rgb(29, 28, 28)
+    background: rgba(0, 0, 0, 0.685);
+    overflow-x: hidden;
 }
 
 #cards-display {
@@ -8,6 +13,7 @@ body {
     width: 800px;
     margin: auto;
     justify-content: center;
+    border: medium double white;
 }
 
 img {
@@ -26,17 +32,29 @@ button:hover {
 
 #reset-button {
     display: block;
-    margin: auto;
-    width: 200px;
-    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-size: 1.2em;
+    width: 180px;
+    height: 80px;
+    color: rgb(252, 228, 245);
+    background-color: black;
+    text-shadow: 0 0 5px black, 0 0 10px #ff0080;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .hidden {
     display: none;
 }
 
-#win-message {
+#win-message > h1 {
     margin: auto;
     text-align: center;
     font-size: 10rem;
+}
+
+footer {
+    height: 25px;
 }
