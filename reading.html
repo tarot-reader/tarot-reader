@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/src/reading/reading.css">
 </head>
 <body>
-    <div class="parallax"></div>
     <header>
         <h1>YOUR TAROT READING</h1>
         <nav>
@@ -31,7 +30,6 @@
             <div id="right-card-back">
                 <img class="tarot-card" src="/assets/back.png" alt="">
             </div>
-        
             <div >
                 <img class="tarot-card" id="left-card-face" src="" alt="">
             </div>
@@ -42,20 +40,26 @@
                 <img class="tarot-card" id="right-card-face" src="" alt="">
             </div>
         </section>
-        
-        <div id="reading-text" class="hidden text-reading">
-            <p id="pt" class="ppf">Your Past <p id="past"></p></p>
-            <p id="pret" class="ppf">Your Present <p id="present"></p></p>
-            <p id="ft" class="ppf">Your Future <p id="future"></p></p>
-        </div>
-
+        <section id="reading-text" class="hidden text-reading">
+            <p id="past-header" class="ppf">
+                Your Past 
+                <p id="past"></p>
+            </p>
+            <p id="present-header" class="ppf">
+                Your Present 
+                <p id="present"></p>
+            </p>
+            <p id="future-header" class="ppf">
+                Your Future 
+                <p id="future"></p>
+            </p>
+        </section>
         <section class="button">
             <button id="render-reading">Get Reading</button>
         </section>
         <section class="button">
                 <button class="hidden" id="reset-reading">New Reading</button>
         </section>
-
     </main>
    <script src="/src/reading/render-reading.js" type="module"></script> 
 </body>
