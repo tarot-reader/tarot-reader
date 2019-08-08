@@ -49,7 +49,6 @@ function showFaceCards() {
             readingVisible.classList.remove('hidden');
         }
 
-        console.log(textDiv.textContent);
         cardOnPage.src = cardImageSrc;
 
 
