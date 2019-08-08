@@ -3,8 +3,7 @@
 body {
     position: static;
     background: rgb(0, 0, 0);
-    overflow-x: hidden
-    
+    overflow-x: hidden;
 }
 
 header {
@@ -16,8 +15,8 @@ header {
     width: 50vw;
     max-width: 500px;
     text-align: center;
-    padding-top: 9px;
-    font-size: 5vh;
+    height: 6vh;
+    padding: 0;
     background-color: rgba(29, 6, 32, 0.342);
     border-radius: 3px;
     box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
@@ -31,7 +30,7 @@ div {
     left: 30%;
     right: 30%;
     margin-top: 15vh;
-    margin-left: -50px;
+    margin-left: -65px;
     z-index: -1;
     justify-content: center;
     text-align: center;
@@ -50,7 +49,7 @@ div::before {
 }
 
 img {
-    height: 60vw;
+    height: 60vh;
     max-height: 650px;
     width: 100%;
 }
@@ -71,28 +70,29 @@ main {
     margin-left: 5px;
     text-align: center;
     overflow-y: scroll;
-    width: 10vw;
+    font-size: 15pt;
+    width: 14vw;
     height: 40vh;
-    padding: 15px;
-    background-color: rgba(29, 6, 32, 0.342);
+    padding: 10px;
+    background-color: rgba(15, 0, 4, 0.747);;
     border-radius: 5px;
-    border-radius: 3px;
     box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
 }
 
 form {
-    padding: 5px;
+    padding-top: 15px;
+    width: 14vw;
     height: 23vh;
     left: 35%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color:  rgba(29, 6, 32, 0.342);
     border-radius: 5px;
 }
 
 legend {
-    border-radius: 3px;
+    text-align: left;
+    border-radius: 2px;
     box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
 }
 
@@ -101,16 +101,20 @@ button {
     background-color: black;
     width: 50%;
     height: 5vh;
+    font-size: 14pt;
+    border-radius: 3px;
 }
 
 button:hover {
     cursor: pointer;
+    box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
 }
 
 input[type='submit']:hover {
     cursor: pointer;
 }
 
-legend {
-    text-align: left;
+fieldset {
+    background-color: rgba(15, 0, 4, 0.747);
+    border-radius: 5px;
 }
