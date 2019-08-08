@@ -87,5 +87,4 @@ resetReading.addEventListener('click', () => {
     resetReading.classList.add('hidden');
     readingVisible.classList.add('hidden');
     renderReading.classList.remove('hidden');
-
 });
