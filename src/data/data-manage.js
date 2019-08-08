@@ -1,4 +1,3 @@
-
 import cards from './card-info.js';
 
 const CARDS_KEY = 'cards-key';
@@ -39,7 +38,6 @@ const info = {
     randomCards(numOfCards) {
         let pulledCards = [];
         info.getCards();
-
         const cardArray = info.get(CARDS_KEY);
         const cardCopy = cardArray.slice();
         let num = 23;
@@ -52,7 +50,6 @@ const info = {
             let userName = info.get('names');
             if(userName === null) {
                 userName = 'stranger';
-                return userName;
             }
 
             const cardObject = cardCopy[randomNumber];
@@ -62,15 +59,28 @@ const info = {
             cardCopy.splice(randomNumber, 1);
             info.save(REMAINING_CARDS, cardCopy);
 
-
             pulledCards.push(cardObject);
             info.save('hand', pulledCards); 
             
+
         }
         return pulledCards;
     },
-
-
+    getHandsArray() {
+        const handsArray = info.get('hands-array');
+        if(!handsArray) {
+            info.save('hands-array', []);
+        }
+        
+    },
+    getHandIntoNewArray() {
+        info.getHandsArray();
+        const handsArray = info.get('hands-array');
+        const currentHand = info.get('hand');
+        handsArray.push(currentHand);
+        info.save('hands-array', handsArray);
+        return handsArray;
+    }
 };
 
 export default info;

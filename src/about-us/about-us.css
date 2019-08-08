@@ -1,54 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
+html {
+    background-image: url('/assets/about-us-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/about-us-background.jpg')
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.685);
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.678);
-    color: rgba(253, 243, 250, 0.952);
-    font-family: 'Nunito', sans-serif;
-    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
-}
-
-nav {
-    width: 70%;
-    margin: auto;
-}
-
-a {
-    float: right;
-    justify-content: space-around;
-    margin: auto 3%;
-    text-decoration: underline;
-    color: rgba(253, 243, 250, 0.952);
-}
-
-a:hover {
-    cursor: pointer;
+    border-bottom-style:double;
+    border-color: aliceblue;
 }
 
 main {
-    width: 90%;
+    width: 60vw;
+    min-width: 800px;
+    margin: 150px auto;
+    background-color: rgba(0, 0, 0, 0.466);
+    justify-content: space-evenly;
+    border: medium double white;
+    border-radius: 5px;
+}
+
+#sect {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin: 30px auto;
-    background-color: rgba(0, 0, 0, 0.678);
-    font-family: 'Roboto', sans-serif;
-    color: rgb(252, 228, 245);
-    text-shadow: 0 0 2px #816b75;
+    justify-content: center;
     justify-content: space-evenly;
 }
 
 div {
-    margin: 1rem;
-    padding: .25rem;
+    display: flex;
+    height: 400px;
+    width: 160px;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
-    height: 300px;
+    height: 60%;
+}
+
+.text {
+    text-align: center;
+    width: 100%;
 }

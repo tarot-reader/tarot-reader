@@ -1,41 +1,29 @@
 html {
     background-color: grey;
-}
-
-h2 {
-   text-align: center;
-    display: block;
-    margin: 4vh;
-}
-
-.top {
-    margin: auto;
     text-align: center;
-    background-color: rgba(41, 38, 37, 0.589);  
-    padding: 20px;
-    width: 75vw;
-    border-radius: 5px;
 }
 
-div {
+.hands {
+  
+    align-content: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.a, .b, .c, .text {
-   padding: 8px;
-   height: 35vh;
-   background-color: #1A1719;
-   color: wheat;
-   width: 10vw;
-   border-radius: 5px;
-}
-
-.content {
-    margin: auto;
-    width: 70vw;
+.cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+img {
+    width: 15vw;
+}
+

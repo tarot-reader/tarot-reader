@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Card Library</title>
-    <link rel="stylesheet" href="src/library/library.css">
+    <title>Matching Game</title>
     <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/matching-game/matching-game.css">
 </head>
 <body>
     <header>
-        <h1>TAROT LIBRARY</h1>
+        <h1>MATCHING GAME</h1>
         <nav>
             <a href="index.html">WELCOME</a>
             <a href="reading.html">READING</a>
+            <a href="library.html">TAROT LIBRARY</a>
             <a href="about-us.html">ABOUT US</a>
-            <a href="/matching-game.html">MATCHING GAME</a>
             <a href="/hands.html">ALL READINGS</a>
         </nav>
     </header>
-    <main id="main"></main>
+    <main>
+        <div id="cards-display">
+        </div>
+        <div id="win-message" class="hidden">
+            <h1>YOU WIN!</h1>
+        </div>
+        <button id="reset-button">Reset Game</button>
+    </main>
     <footer></footer>
-    <script src="./src/library/library.js" type="module"></script>
+    <script src="./src/matching-game/matching-game.js" type="module"></script>
 </body>
 </html>

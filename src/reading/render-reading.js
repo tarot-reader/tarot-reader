@@ -1,5 +1,6 @@
 import info from '../data/data-manage.js';
 info.getCards();
+info.getHandsArray();
 
 const renderReading = document.getElementById('render-reading');
 const resetReading = document.getElementById('reset-reading');
@@ -29,7 +30,10 @@ function showFaceCards() {
         
         const cardOnPage = faceUpArray[i];
         const textDiv = textArray[i];
-       
+
+        
+        cardOnPage.src = cardImageSrc;
+ 
         const reverseRead = cardObject.readingReversed;
         
         const regularRead = cardObject.readingText;
@@ -45,7 +49,6 @@ function showFaceCards() {
             readingVisible.classList.remove('hidden');
         }
 
-        console.log(textDiv.textContent);
         cardOnPage.src = cardImageSrc;
 
 
@@ -61,6 +64,8 @@ function hideBackCards() {
 
 }
 
+
+   
 function showBackCards() {
     for(let i = 0; i < faceDownArray.length; i++) {
         let cardBack = faceDownArray[i];
@@ -89,6 +94,7 @@ renderReading.addEventListener('click', () => {
     unHideFaceCards();
     resetReading.classList.remove('hidden');
     renderReading.classList.add('hidden');
+    info.getHandIntoNewArray();
 });
 
 resetReading.addEventListener('click', () => {
@@ -98,4 +104,5 @@ resetReading.addEventListener('click', () => {
     resetReading.classList.add('hidden');
     readingVisible.classList.add('hidden');
     renderReading.classList.remove('hidden');
+
 });

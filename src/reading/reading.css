@@ -1,6 +1,4 @@
-
 html {
-    font-family: sans-serif;
     background-image: url('/assets/about-us-background.jpg');
     height: 100vh;
     background-size: cover;
@@ -9,17 +7,47 @@ html {
     background-attachment: fixed;
     max-width: 100vw;
     margin: auto;
+}
 
+header {
+    border-bottom-style:double;
+    border-color: aliceblue;
 }
 
 body {
     height: 100vh;
+    background: rgba(0, 0, 0, 0.685);
 }
 
 main {
+    width: 90vw;
     max-width: 960px;
-    margin: auto;
+    margin: 40px auto;
     display: block;
+    background: rgba(8, 0, 0, 0.473);
+    border: medium double white;
+    border-radius: 5px;
+}
+
+#tarot-reading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.text-reading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 30vh;
+    margin: 0 auto;
+    color: black;
+    text-shadow: none;
 }
 
 .tarot-card {
@@ -27,10 +55,25 @@ main {
     height: 40vh;
     display: flex;
     justify-content: center;
+    border-radius: 5px;
+}
+
+img.tarot-card {
+    margin: 18px auto;
+    height: 40vh;
+}
+
+#left-card-back, #middle-card-back, #right-card-back {
+    margin: 0 auto;
 }
 
 .button {
     text-align: center;
+    margin: 7px auto;
+}
+
+button:hover {
+    box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
 }
 
 .hidden {
@@ -45,25 +88,48 @@ main {
     transform: rotate(180deg);
 }
 
-.text-reading {
-    background-color: aliceblue;
+#past, #present, #future {
+    margin: 0 auto;
+    width: 60vw;
+    background-color: rgb(210,180,140);
+    border: 1px dashed black;
+    padding: 16px 4px 0px 4px;
 }
 
-#tarot-reading {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.ppf {
+    padding-left: 2px;
     margin: 0 auto;
-    justify-content: space-between;
+    background-color: rgb(155, 128, 94);
+    border-radius: 2px;
+}
+
+#pt {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pret {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+
+}
+
+#ft {
+    width: 15vw;
+    position: absolute;
+    top: 0;
+    left: 67%;
 }
 
 #render-reading, #reset-reading {
     font-size: 1.2em;
     width: 180px;
     height: 80px;
-    background-color:#5E5359;
-    color: #FFB9DC;
+    color: rgb(252, 228, 245);
+    background-color: black;
     text-shadow: 0 0 5px black, 0 0 10px #ff0080;
     cursor: pointer;
     border-radius: 6px;

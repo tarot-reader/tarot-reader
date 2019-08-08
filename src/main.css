@@ -2,29 +2,33 @@
 body {
     margin: 0;
 }
+
 header {
     display: flex;
     justify-content: space-around;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.877);
-    color: rgba(253, 243, 250, 0.952);
+    background-color: rgba(7, 0, 2, 0.747);
+    color: rgba(253, 204, 238, 0.979);
     font-family: 'Nunito', sans-serif;
-    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
 
 h1 {
-    height: 80%;
+    height: 100%;
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 13px;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-left: 22px;
+    font-size: 4vh;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #ff0080, 0 0 4px #ff0080, 0 0 6px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080;
 }
 
 nav {
     width: 70%;
     margin: auto;
+    font-size: 2vh;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #ff0080, 0 0 4px #ff0080, 0 0 6px #ff0080, 0 0 9px #ff0080, 0 0 10px #ff0080;
 }
 
 a {
@@ -37,6 +41,7 @@ a {
 
 a:hover {
     cursor: pointer;
+    text-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
 }
 
 main {
