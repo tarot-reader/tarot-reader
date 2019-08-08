@@ -18,6 +18,12 @@ button {
     margin: 1rem;
 }
 
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+}
+
 #reset-button {
     display: block;
     margin: auto;
@@ -30,7 +36,7 @@ button {
 }
 
 #win-message {
-    max-width: 800px;
     margin: auto;
     text-align: center;
+    font-size: 10rem;
 }
