@@ -32,7 +32,6 @@ div {
 img {
     margin-top: 5px;
     height: 300px;
-    
 }
 
 .card:hover {
@@ -55,13 +54,12 @@ p {
     margin-right: 5px;
 }
 
-footer {
-    height: 100px;
-
-}
-
 .birthday {
     border: 5px solid rgba(253, 243, 250, 0.952);
     padding: 5px;
     box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+}
+
+footer {
+    height: 100px;
 }

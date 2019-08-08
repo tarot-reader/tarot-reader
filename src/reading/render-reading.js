@@ -10,7 +10,6 @@ const leftCardFace = document.getElementById('left-card-face');
 const middleCardBack = document.getElementById('middle-card-back');
 const rightCardBack = document.getElementById('right-card-back');
 const leftCardBack = document.getElementById('left-card-back');
-
 const pastText = document.getElementById('past');
 const presentText = document.getElementById('present');
 const futureText = document.getElementById('future');
@@ -23,22 +22,15 @@ const textArray = [futureText, presentText, pastText];
 function showFaceCards() {
     const threeCardArray = info.randomCards(3);
     for(let i = 0; i < threeCardArray.length; i++) {
-        
         const cardImageSrc = threeCardArray[i].imgSrc;
         const cardDisplay = threeCardArray[i].displayDirection;
         const cardObject = threeCardArray[i];
-        
         const cardOnPage = faceUpArray[i];
         const textDiv = textArray[i];
-
-        
         cardOnPage.src = cardImageSrc;
  
         const reverseRead = cardObject.readingReversed;
-        
         const regularRead = cardObject.readingText;
-        
-
         if(cardDisplay === 'upside-down') {
             cardOnPage.classList.add('flipped');
             textDiv.textContent = reverseRead;
@@ -48,12 +40,8 @@ function showFaceCards() {
             textDiv.textContent = regularRead;
             readingVisible.classList.remove('hidden');
         }
-
         cardOnPage.src = cardImageSrc;
-
-
     }
-
 }
 
 function hideBackCards() {
@@ -61,10 +49,7 @@ function hideBackCards() {
         let cardBack = faceDownArray[i];
         cardBack.classList.add('hidden');
     }
-
 }
-
-
    
 function showBackCards() {
     for(let i = 0; i < faceDownArray.length; i++) {
@@ -88,7 +73,6 @@ function unHideFaceCards() {
 }
 
 renderReading.addEventListener('click', () => {
-    
     showFaceCards();
     hideBackCards();
     unHideFaceCards();
@@ -98,11 +82,9 @@ renderReading.addEventListener('click', () => {
 });
 
 resetReading.addEventListener('click', () => {
-    
     showBackCards();
     hideFaceCards();
     resetReading.classList.add('hidden');
     readingVisible.classList.add('hidden');
     renderReading.classList.remove('hidden');
-
 });

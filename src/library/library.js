@@ -2,6 +2,7 @@ import info from '../data/data-manage.js';
 import renderCard from './render-card.js';
 
 const main = document.getElementById('main');
+const birthdayCardElement = document.getElementById(birthdayCardId);
 const cardLibrary = info.getCards();
 
 for(let i = 0; i < cardLibrary.length; i++) {
@@ -10,7 +11,6 @@ for(let i = 0; i < cardLibrary.length; i++) {
 }
 
 const birthday = info.get('birthdays');
-
 const birthMonthFirstDigit = +birthday[5];
 const birthMonthSecondDigit = +birthday[6];
 
@@ -43,7 +43,6 @@ function findBirthdayCard(M1, M2) {
 }
 
 const birthdayCardId = findBirthdayCard(birthMonthFirstDigit, birthMonthSecondDigit);
-const birthdayCardElement = document.getElementById(birthdayCardId);
 birthdayCardElement.classList.add('birthday');
 const birthdayMessage = document.createElement('p');
 birthdayMessage.textContent = 'This is your birthday card!';
