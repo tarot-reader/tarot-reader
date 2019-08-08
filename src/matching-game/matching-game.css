@@ -25,13 +25,29 @@ body {
 
 img {
     height: 200px;
+    object-fit: cover;
 }
 
 button {
     margin: 1rem;
+    border-width: 0;
+    background:none;
+    border-color: none;
+    border-style: none;
+}
+button:hover {
+    background:none;
+    border-width: 0;
+    border-color: none;
+    border-style: none;
+    border-radius: 10px;
 }
 
-button:hover {
+button:focus {
+    outline: 0;
+}
+
+img:hover {
     cursor: pointer;
     transform: scale(1.2);
     box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
