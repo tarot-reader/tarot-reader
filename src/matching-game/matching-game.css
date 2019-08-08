@@ -30,7 +30,7 @@ button {
 }
 
 #win-message {
-    max-width: 800px;
     margin: auto;
     text-align: center;
+    font-size: 10rem;
 }
