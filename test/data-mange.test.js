@@ -58,7 +58,7 @@ test('Is the object being altered?', function(assert) {
         number: 0,
         readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
         readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
-        imgSrc: '/assets/the-fool.webp',
+        imgSrc: '/assets/the-fool.png',
         altId: 'A picture of the fool card',
         displayDirection: 'up',
     };
