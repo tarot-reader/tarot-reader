@@ -84,6 +84,9 @@ function unmatch() {
         for(let i = 0; i < cardArray.length; i++) {
             cardArray[i].disabled = false;
         }
+        for(let i = 0; i < totalMatches.length; i++) {
+            totalMatches[i].disabled = true;
+        }   
     }, 1500);
 }
 
