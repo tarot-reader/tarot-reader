@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(29, 28, 28)
+}
+
+#cards-display {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+}
+
+img {
+    height: 200px;
+}
+
+button {
+    margin: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+}
+
+#reset-button {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#win-message {
+    margin: auto;
+    text-align: center;
+    font-size: 10rem;
+}

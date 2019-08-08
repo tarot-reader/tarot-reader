@@ -116,6 +116,7 @@ const cards = [
     {
         name: 'Temperance',
         number: 14,
+        description: 'Temperance description.',
         readingText: 'Economy, a moderate lifestyle, patience. Obtaining security through frugal management of means. Meditation. All things in moderation (including moderation!).',
         readingReversed: 'Competitive interests. Too much caution. Hostility. A person with whom it is impossible to work. Misunderstanding others.',
         imgSrc: '/assets/temperance.jpg',

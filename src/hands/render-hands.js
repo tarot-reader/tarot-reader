@@ -1,61 +1,76 @@
-const testObject1 = {
-    name: 'The Fool',
-    description: 'Inexperience, one seeking fulfillment, foolishness.',
-    imgSrc: 'assets/the-fool.webp',
-    altId: 'The Fool',
-    side: 'Up'
-};
-
-const testObject2 = {
-    name: 'The Fool',
-    description: 'Inexperience, one seeking fulfillment, foolishness.',
-    imgSrc: 'assets/the-fool.webp',
-    altId: 'The Fool',
-    side: 'Down'
-};
-
-const testObject3 = {
-    name: 'The Fool',
-    description: 'Inexperience, one seeking fulfillment, foolishness.',
-    imgSrc: 'assets/the-fool.webp',
-    altId: 'The Fool',
-    side: 'Up'
-};
-
-const testObjectArray = [testObject1, testObject2, testObject3];
-
-const testObjectArrayTwo = [testObject3, testObject2, testObject1];
-
-const testArrayArray = [testObjectArray, testObjectArrayTwo];
-
-const resultOf = renderHand(testArrayArray);
-
-renderHand(resultOf);
-
-export default function renderHand(allHandsArray) {
-
-    for(let i = 0; i < allHandsArray.length; i++) {
-        const handArray = allHandsArray[i];
+function renderHand(array) {
+    const section = document.createElement('section');
+    
+    for(let i = 0; i < array.length; i++) {
+        const smallerArray = array[i];
+        const objectFromSmallerArray = smallerArray[0];
         
-        const div = document.createElement('div');
-        div.classList.add('hand' + i);
         
-        for(let i = 0; i < handArray.length; i++) {
-            const cardObject = handArray[i];
+        const readDiv = document.createElement('div');
+        readDiv.classList.add('reading');
+        readDiv.id = 'example';
+        
+        const p = document.createElement('p');
+        const userNameString = ' ' + objectFromSmallerArray.user;
+        
+        let numberValueForHandNumber = i;
+        numberValueForHandNumber += 1;
+        
+        p.textContent = 'Hello' + userNameString + '! This was reading number ' + numberValueForHandNumber + '!';
+        readDiv.appendChild(p);
+        
+        const cardsDiv = document.createElement('div');
+        cardsDiv.classList.add('cards');
+        readDiv.appendChild(cardsDiv);
+        
+        for(let j = 0; j < smallerArray.length; j++) {
+            const singleObject = smallerArray[j];
+
+            const singleCardDiv = document.createElement('div');
+            singleCardDiv.classList.add('card');
+            cardsDiv.appendChild(singleCardDiv);
+            
+            const cardImg = document.createElement('img');
+            const isFlippedStatus = singleObject.displayDirection;
+            if(isFlippedStatus === 'upside-down') {
+                cardImg.classList.add('flipped');
+            } else if(isFlippedStatus === 'upside-up') {
+                cardImg.classList.remove('flipped');
+            }
+            const cardImgSrc = singleObject.imgSrc;
+            cardImg.src = cardImgSrc;
+            singleCardDiv.appendChild(cardImg);
+            
+            const fortuneTitle = document.createElement('p');
+            if(j === 0) {
+                fortuneTitle.textContent = 'Your Future';
+            } else if(j === 1) {
+                fortuneTitle.textContent = 'Your Present';
+            } else if(j === 2) {
+                fortuneTitle.textContent = 'Your Past';
+            }
+            
+            singleCardDiv.appendChild(fortuneTitle);
+
+            const fortuneString = document.createElement('div');
+            const fortuneUp = singleObject.readingText;
+            const fortuneDown = singleObject.readingReversed;
+            if(isFlippedStatus === 'upside-down') {
+                fortuneString.textContent = fortuneDown;
+            } else if(isFlippedStatus === 'upside-up') {
+                fortuneString.textContent = fortuneUp;
+            }
+            singleCardDiv.appendChild(fortuneString);
             
             
-            const img = document.createElement('img');
-            img.src = cardObject.imgSrc;
-            img.alt = cardObject.altId;
-            div.appendChild(img);
-            
+    
             
         }
-        const p = document.createElement('p');
-        p.textContent = 'a word';
-        div.appendChild(p);
-        
-        return div;
-    }
     
+        section.appendChild(readDiv);
+    }
+    return section;
 }
+
+export default renderHand;
+
