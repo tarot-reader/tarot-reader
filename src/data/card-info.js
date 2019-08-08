@@ -6,7 +6,7 @@ const cards = [
         number: 0,
         readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
         readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
-        imgSrc: '/assets/the-fool.webp',
+        imgSrc: '/assets/the-fool.png',
         altId: 'A picture of the fool card',
     },
     {
@@ -14,7 +14,7 @@ const cards = [
         number: 1,
         readingText: 'Opportunities to use talents. Originality, creativity, imagination, skill, diplomacy, self-reliance. The merging of the four elements.',
         readingReversed: 'Unskilled, clumsy, insecure, disgrace, bad judgement causes loss.',
-        imgSrc: '/assets/the-magician.webp',
+        imgSrc: '/assets/the-magician.png',
         altId: 'A picture of the magician card',
     },
     {
@@ -22,7 +22,7 @@ const cards = [
         number: 2,
         readingText: 'Practicality, good judgement, wisdom, mystery, the clouded future. A woman of interest to the seeker, or the seeker herself.',
         readingReversed: 'Passion, conceit, lack of sense, poor intuition, ignorance, bad judgement.',
-        imgSrc: '/assets/the-high-priestess.webp',
+        imgSrc: '/assets/the-high-priestess.png',
         altId: 'A picture of The High Priestess',
     },
     {
@@ -30,7 +30,7 @@ const cards = [
         number: 3,
         readingText: 'Pregnancy, fertility, good advice, safety, security, hidden actions. A competent woman, safe and secure, who is building a future for herself and her family.',
         readingReversed: 'Lack of satisfaction. The unraveling of involved matters. Uncertainty, infidelity, infertility.',
-        imgSrc: '/assets/the-empress.webp',
+        imgSrc: '/assets/the-empress.png',
         altId: 'A picture of The Empress',
     },
     {
@@ -38,7 +38,7 @@ const cards = [
         number: 4,
         readingText: 'A father figure, secure and successful. A stable, authoritative, powerful leader. A person with the qualities of reason and conviction.',
         readingReversed: 'Confusion, obstruction, immaturity, ineffectiveness, weakness of character, megalomania.',
-        imgSrc: '/assets/the-emperor.webp',
+        imgSrc: '/assets/the-emperor.png',
         altId: 'A picture of The Emperor',
     },
     {
@@ -46,7 +46,7 @@ const cards = [
         number: 5,
         readingText: 'Tradition, captivity, servitude, ritual, inactivity, retention, timidity. A desire to hold on to old thoughts and ways even if they are outdated. Concern for form over function.',
         readingReversed: 'A foolish exercise in generosity, eccentricity, intrigue, weakness.',
-        imgSrc: '/assets/the-hierophant.jpg',
+        imgSrc: '/assets/the-hierophant.png',
         altId: 'A picture of The Hierophant',
     },
     {
@@ -54,7 +54,7 @@ const cards = [
         number: 6,
         readingText: 'Love, respect, partnership, trust, communication, perfection, honor, romance, beauty. A couple which has worked together to overcome trials.',
         readingReversed: 'Failure, unreliability, separation, frustration in marriage, instability, confusion, silence, The inability or disinclination to share thoughts.',
-        imgSrc: '/assets/the-lovers.jpg',
+        imgSrc: '/assets/the-lovers.png',
         altId: 'A picture of The Lovers',
     },
     {
@@ -62,7 +62,7 @@ const cards = [
         number: 7,
         readingText: 'Work and travel, purpose, trouble or problems fall behind, triumph, harmony, balance. Controlling forces which might conflict and bringing them together to form a working whole.',
         readingReversed: 'Quarrels, trouble, defeat, failure, the collapse of hopes or dreams, unfavorable legal proceedings.',
-        imgSrc: '/assets/the-chariot.webp',
+        imgSrc: '/assets/the-chariot.png',
         altId: 'A picture of The Chariot',
     },
     {
@@ -70,7 +70,7 @@ const cards = [
         number: 8,
         readingText: 'Power, energy, strength, courage, conviction. The gift to soothe others\' grief or to help them solve their problems.',
         readingReversed: 'Weakness, sickness, lack of faith, despotism, discord, abuse of power, a fear of loneliness.',
-        imgSrc: '/assets/strength.webp',
+        imgSrc: '/assets/strength.png',
         altId: 'A picture of Strength',
     },
     {
@@ -78,7 +78,7 @@ const cards = [
         number: 9,
         readingText: 'Meditation, the search for truth, good counsel, wisdom, prudence. A withdrawal from life is needed  to find one\'s center.',
         readingReversed: 'Hastiness, imprudence, unreasoning caution or fear, emotional immaturity. Withdrawal from one\'s problems with no constructive plans.',
-        imgSrc: '/assets/the-hermit.webp',
+        imgSrc: '/assets/the-hermit.png',
         altId: 'A picture of The Hermit',
     },
     {
@@ -86,7 +86,7 @@ const cards = [
         number: 10,
         readingText: 'Change, destiny, fortune, good luck, the end of troubles in sight. Moving ahead for better or worse.',
         readingReversed: 'Reversal of fortunes, failure, bad luck, unexpected interference.',
-        imgSrc: '/assets/wheel-of-fortune.jpg',
+        imgSrc: '/assets/wheel-of-fortune.png',
         altId: 'A picture of Wheel of Fortune',
     },
     {
@@ -94,7 +94,7 @@ const cards = [
         number: 11,
         readingText: 'Fairness, balance, equality, rightness, legal matters, negotiations.',
         readingReversed: 'Bias, prejudice, bigotry, intolerance, a bad judgement (legal), cruel punishment.',
-        imgSrc: '/assets/justice.webp',
+        imgSrc: '/assets/justice.png',
         altId: 'A picture of Justice',
     },
     {
@@ -102,7 +102,7 @@ const cards = [
         number: 12,
         readingText: 'Suspense, life interrupted, change. Wisdom in occult matters. Sacrifice for wisdom. Inner search for truth. Change in your point of view.',
         readingReversed: 'A wasteful search, selfishness. Lack of effort needed to achieve a goal. A useless gesture.',
-        imgSrc: '/assets/the-hanged-man.jpg',
+        imgSrc: '/assets/the-hanged-man.png',
         altId: 'A picture of The Hanged Man',
     },
     {
@@ -110,7 +110,7 @@ const cards = [
         number: 13,
         readingText: 'The end of an era (and a beginning). A reminder of mortality. A great change. A discovery which changes the seeker\'s life direction.',
         readingReversed: 'Lethargy. great inertia, slow or ponderous change, depression. Resisting the inevitable.',
-        imgSrc: '/assets/death.webp',
+        imgSrc: '/assets/death.png',
         altId: 'A picture of Death',
     },
     {
@@ -119,7 +119,7 @@ const cards = [
         description: 'Temperance description.',
         readingText: 'Economy, a moderate lifestyle, patience. Obtaining security through frugal management of means. Meditation. All things in moderation (including moderation!).',
         readingReversed: 'Competitive interests. Too much caution. Hostility. A person with whom it is impossible to work. Misunderstanding others.',
-        imgSrc: '/assets/temperance.jpg',
+        imgSrc: '/assets/temperance.png',
         altId: 'A picture of Temperance',
     },
     {
@@ -127,7 +127,7 @@ const cards = [
         number: 15,
         readingText: 'Greed, the monkey trap. Vehement desires, lust. Bondage to an ideal. Bad or evil influence or advice. A choice upon which your date depends. Dissolution.',
         readingReversed: 'A release from bondage. A rest. A new life\'s direction.',
-        imgSrc: '/assets/the-devil.jpg',
+        imgSrc: '/assets/the-devil.png',
         altId: 'A picture of The Devil',
     },
     {
@@ -135,7 +135,7 @@ const cards = [
         number: 16,
         readingText: 'Sudden change, broken friendships, destruction, security lost, disgrace. Catastrophic transformation.',
         readingReversed: 'Tyranny, continued oppression. Lack of change, monetary losses.',
-        imgSrc: '/assets/the-tower.jpg',
+        imgSrc: '/assets/the-tower.png',
         altId: 'A picture of The Tower',
     },
     {
@@ -143,7 +143,7 @@ const cards = [
         number: 17,
         readingText: 'Hope and faith. A blending of the best of the past and present. Bright prospects. Mastering the occult arts. An awareness of two worlds.',
         readingReversed: 'Laziness and indifference. Unrealized hopes. Arrogance, pride. Delays, loss of hope or faith.',
-        imgSrc: '/assets/the-star.jpg',
+        imgSrc: '/assets/the-star.png',
         altId: 'A picture of The Star',
     },
     {
@@ -151,7 +151,7 @@ const cards = [
         number: 18,
         readingText: 'A warning, deception. Enemies who are out of sight. A caution to sta on your path for safety. Darkness, companions out of their element',
         readingReversed: 'A white lie, a trick, a tiny mistake. Silence, stillness. Unexpected gain with no cost exacted.',
-        imgSrc: '/assets/the-moon.webp',
+        imgSrc: '/assets/the-moon.png',
         altId: 'A picture of The Moon',
     },
     {
@@ -159,7 +159,7 @@ const cards = [
         number: 19,
         readingText: 'Accomplishment, success, material happiness. A good marriage, joy, pleasure. Liberation, freedom, contentment.',
         readingReversed: 'Lesser joys. A separation from loved ones. Delayed success or postponed security. An uncertain future.',
-        imgSrc: '/assets/the-sun.webp',
+        imgSrc: '/assets/the-sun.png',
         altId: 'A picture of The Sun',
     },
     {
@@ -167,7 +167,7 @@ const cards = [
         number: 20,
         readingText: 'A change of position, rejuvenation, rebirth. Reward, acquiring a purpose. Atonement, paying the piper, accounting for one\'s actions.',
         readingReversed: 'Weakness. Lost affections, separation, divorce. Confrontation, indecision. Avoidance of obligations.',
-        imgSrc: '/assets/judgement.webp',
+        imgSrc: '/assets/judgement.png',
         altId: 'A picture of Judgement',
     },
     {
@@ -175,7 +175,7 @@ const cards = [
         number: 21,
         readingText: 'Completion, the end of a way of life, success. A new beginning, a change of location, hope for the future. Triumph in the end. The admiration of friends. The breadth of possibilities.',
         readingReversed: 'Disappointment. A discouragingly small advance. Failure, the inability to finish what you\'ve started. Permanence, stagnation.',
-        imgSrc: '/assets/the-world.webp',
+        imgSrc: '/assets/the-world.png',
         altId: 'A picture of ',
     },
 ];
