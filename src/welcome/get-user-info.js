@@ -2,7 +2,7 @@ import info from '../data/data-manage.js';
 
 const form = document.getElementById('user-info');
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', event => {
     event.preventDefault();
 
     const formData = new FormData(form);
