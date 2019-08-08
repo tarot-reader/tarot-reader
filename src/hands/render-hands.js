@@ -1,10 +1,6 @@
-import info from '../data/data-manage.js';
-
-const placement = document.getElementById('placement');
-
 function renderHand(array) {
     const section = document.createElement('section');
-
+    
     for(let i = 0; i < array.length; i++) {
         const smallerArray = array[i];
         const objectFromSmallerArray = smallerArray[0];
@@ -13,20 +9,20 @@ function renderHand(array) {
         const readDiv = document.createElement('div');
         readDiv.classList.add('reading');
         readDiv.id = 'example';
-    
+        
         const p = document.createElement('p');
         const userNameString = ' ' + objectFromSmallerArray.user;
-
+        
         let numberValueForHandNumber = i;
         numberValueForHandNumber += 1;
-
+        
         p.textContent = 'Hello' + userNameString + '! This was reading number ' + numberValueForHandNumber + '!';
         readDiv.appendChild(p);
         
         const cardsDiv = document.createElement('div');
         cardsDiv.classList.add('cards');
         readDiv.appendChild(cardsDiv);
-
+        
         for(let j = 0; j < smallerArray.length; j++) {
             const singleObject = smallerArray[j];
 
@@ -44,7 +40,7 @@ function renderHand(array) {
             const cardImgSrc = singleObject.imgSrc;
             cardImg.src = cardImgSrc;
             singleCardDiv.appendChild(cardImg);
-
+            
             const fortuneTitle = document.createElement('p');
             if(j === 0) {
                 fortuneTitle.textContent = 'Your Future';
@@ -65,8 +61,8 @@ function renderHand(array) {
                 fortuneString.textContent = fortuneUp;
             }
             singleCardDiv.appendChild(fortuneString);
-
-        
+            
+            
     
             
         }
@@ -76,9 +72,5 @@ function renderHand(array) {
     return section;
 }
 
-const megaHandArray = info.get('hands-array');
-
-const totalCreatedHTML = renderHand(megaHandArray);
-placement.appendChild(totalCreatedHTML);
-
 export default renderHand;
+
