@@ -1,6 +1,6 @@
 import info from '../data/data-manage.js';
 
-const placement = document.getElementById('placement');
+// const placement = document.getElementById('placement');
 
 function renderHand(array) {
     const section = document.createElement('section');
@@ -78,7 +78,7 @@ function renderHand(array) {
 
 const megaHandArray = info.get('hands-array');
 
-const totalCreatedHTML = renderHand(megaHandArray);
-placement.appendChild(totalCreatedHTML);
+// const totalCreatedHTML = renderHand(megaHandArray);
+// placement.appendChild(totalCreatedHTML);
 
 export default renderHand;
