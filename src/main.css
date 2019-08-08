@@ -18,9 +18,9 @@ h1 {
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
-    padding-top: 9px;
+    padding-top: 20px;
     padding-left: 22px;
-    font-size: 5vh;
+    font-size: 4vh;
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 2px #ff0080, 0 0 4px #ff0080, 0 0 6px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080;
 }
 
@@ -41,6 +41,7 @@ a {
 
 a:hover {
     cursor: pointer;
+    text-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
 }
 
 main {

@@ -1,25 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto&display=swap');
 
-a {
-    text-decoration: underline;
-    color: rgba(253, 243, 250, 0.952);
+html {
+    background-image: url('/assets/about-us-background.jpg')
+}
+
+header {
+    border-bottom-style:double;
+    border-color: aliceblue;
 }
 
 body {
-    background-color: rgb(44, 42, 42);
+    background: rgba(0, 0, 0, 0.685);
     overflow-x: hidden;
 }
 
 main {
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 20px auto;
     padding-left: 4rem;
     padding-right: 4rem;
     justify-content: space-between; 
 }
 
+div {
+    background-color: rgba(0, 0, 0, 0.226);
+    border: medium double white;
+}
+
 img {
+    margin-top: 5px;
     height: 300px;
     
 }
@@ -39,7 +50,9 @@ p {
     padding: 1rem;
     border-radius: 5px;
     border: dashed 1px;
-    width: 200px;
+    width: 190px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 footer {
