@@ -6,6 +6,7 @@ const cardsDisplay = document.getElementById('cards-display');
 const winMessage = document.getElementById('win-message');
 const cards = document.getElementsByClassName('card');
 const resetButton = document.getElementById('reset-button');
+const background = document.getElementById('background');
 
 const eightCardArray = info.randomCards(8);
 const sixteenCardArray = [];
@@ -95,6 +96,8 @@ function displayWin() {
     for(let i = 0; i < cardArray.length; i++) {
         cardArray[i].classList.add('hidden');
         winMessage.classList.remove('hidden');
+        cardsDisplay.classList.remove('remove-border');
+        background.classList.add('show-background');
     }
 }
 
