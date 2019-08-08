@@ -1,0 +1,29 @@
+html {
+    background-color: grey;
+    text-align: center;
+}
+
+.hands {
+  
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+img {
+    width: 15vw;
+}
+

@@ -1,5 +1,6 @@
 import info from '../data/data-manage.js';
 info.getCards();
+info.getHandsArray();
 
 const renderReading = document.getElementById('render-reading');
 const resetReading = document.getElementById('reset-reading');
@@ -94,6 +95,7 @@ renderReading.addEventListener('click', () => {
     unHideFaceCards();
     resetReading.classList.remove('hidden');
     renderReading.classList.add('hidden');
+    info.getHandIntoNewArray();
 });
 
 resetReading.addEventListener('click', () => {

@@ -68,4 +68,126 @@ test('Is the object being altered?', function(assert) {
     assert.deepEqual(expected, actual);
 });
 
+test('Is array with three objects saving?', function(assert) {
+
+    const expected = [
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+    ];
+     
+    info.save('hand', expected);
+
+    const actual = info.get('hand');
+    
+    assert.deepEqual(expected, actual);
+});
+
+test('Is currentHand being pushed into handsArray', function(assert) {
+
+    const demoHand = [
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+    ];
+     
+    info.save('hand', demoHand);
+    let newArray = info.getHandIntoNewArray();
+    
+    const demoHandTwo = [
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+        {
+            user: 'Anne',
+            name: 'The Fool',
+            number: 0,
+            readingText: 'Thoughtlessness, folly, lightheartedness, innocence. Purity of heart. Lack of discipline. One seeking fulfillment and experience. Freedom, lack of restraint.',
+            readingReversed: 'Carelessness, vanity, indecision, apathy, poor judgement. Lack of control.',
+            imgSrc: '/assets/the-fool.webp',
+            altId: 'A picture of the fool card',
+            displayDirection: 'up',
+        },
+    ];
+
+    info.save('hand', demoHandTwo);
+    newArray = info.getHandIntoNewArray();
+    
+    const expected = [];
+    expected.push(demoHand, demoHandTwo);
+    
+    assert.deepEqual(expected, newArray);
+});
+
 
