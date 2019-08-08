@@ -28,13 +28,11 @@ function shuffle(array) {
 }
 const shuffledArray = shuffle(sixteenCardArray);
 
-
 for(let i = 0; i < shuffledArray.length; i++) {
     renderButton(shuffledArray[i], i);
     const button = renderButton(shuffledArray[i], i);
     cardsDisplay.appendChild(button);
 }
-
 
 const cardArray = [...cards];
 let openedCards = [];
@@ -55,7 +53,6 @@ function cardCheck() {
     if(openedCards.length < 2) {
         return;
     }
-
     if(openedCards[0] === openedCards[1]) {
         match();
     } else {
@@ -66,8 +63,6 @@ function cardCheck() {
 function match() {
     totalMatches.push(openedButtons[0]);
     totalMatches.push(openedButtons[1]);
-    openedButtons[0].childNodes[1].classList.add('match');
-    openedButtons[1].childNodes[1].classList.add('match');
     openedButtons[0].disabled = true;
     openedButtons[1].disabled = true;
     openedButtons = [];
@@ -89,7 +84,7 @@ function unmatch() {
         for(let i = 0; i < cardArray.length; i++) {
             cardArray[i].disabled = false;
         }
-    }, 2000);
+    }, 1500);
 }
 
 function displayWin() {
