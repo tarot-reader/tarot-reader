@@ -1,10 +1,83 @@
 html {
-    background-color: grey;
+    background-image: url('/assets/about-us-background.jpg')
+}
+
+body {
+    background: rgba(0, 0, 0, 0.685);
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+header {
+    border-bottom-style:double;
+    border-color: aliceblue;
+}
+
+section {
+    margin: auto;
     text-align: center;
+    width: 70vw;
+    margin-top: 20px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 2px #816b75;
+}
+
+p:not(.cards) {
+    margin: 15px auto;
+    border-radius: 5px;
+    width: 86%;
+    background-color: rgb(155, 128, 94);
+    padding: 5px;
+    font-size: 1.5rem;
+    font-style: italic;
+    border: 1px dashed black;
+}
+
+
+.card > p {
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 14vw;
+    padding: 8px 4px 4px 4px;
+    padding-left: 2px;
+    background-color: rgb(155, 128, 94);
+    border-radius: 2px;
+    border: 1px dashed black;
+    border-bottom: none;
+}
+
+.card > div {
+    margin: 0 auto;
+    width: 14vw;
+    background-color: rgb(210,180,140);
+    border: 1px dashed black;
+    padding: 8px 4px 4px 4px; 
+    min-height: 17vh;
+    border-radius: 2px;
+}
+
+
+
+
+.reading {
+    border: medium white double;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    background: rgba(0, 0, 0, 0.384);
+}
+
+.flipped {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .hands {
-  
+
     align-content: center;
     display: flex;
     justify-content: center;
@@ -13,7 +86,7 @@ html {
 
 .cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
 }
 
@@ -24,6 +97,9 @@ html {
 }
 
 img {
-    width: 15vw;
+    margin: 0px auto;
+    width: 14vw;
+    border-radius: 5px;
+
 }
 
