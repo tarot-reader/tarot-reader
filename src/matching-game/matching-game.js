@@ -45,6 +45,7 @@ for(let i = 0; i < cardArray.length; i++) {
         button.childNodes[1].classList.remove('hidden');
         openedCards.push(button.value);
         openedButtons.push(button);
+        button.disabled = true;
         cardCheck();
     });
 }
