@@ -5,17 +5,15 @@ function renderHand(array) {
         const smallerArray = array[i];
         const objectFromSmallerArray = smallerArray[0];
         
-        
         const readDiv = document.createElement('div');
         readDiv.classList.add('reading');
         readDiv.id = 'example';
+        section.appendChild(readDiv);
         
         const p = document.createElement('p');
         const userNameString = ' ' + objectFromSmallerArray.user;
-        
         let numberValueForHandNumber = i;
         numberValueForHandNumber += 1;
-        
         p.textContent = 'Hello' + userNameString + '! This was reading number ' + numberValueForHandNumber + '!';
         readDiv.appendChild(p);
         
@@ -23,54 +21,66 @@ function renderHand(array) {
         cardsDiv.classList.add('cards');
         readDiv.appendChild(cardsDiv);
         
-        for(let j = 0; j < smallerArray.length; j++) {
-            const singleObject = smallerArray[j];
-
-            const singleCardDiv = document.createElement('div');
-            singleCardDiv.classList.add('card');
-            cardsDiv.appendChild(singleCardDiv);
-            
-            const cardImg = document.createElement('img');
-            const isFlippedStatus = singleObject.displayDirection;
-            if(isFlippedStatus === 'upside-down') {
-                cardImg.classList.add('flipped');
-            } else if(isFlippedStatus === 'upside-up') {
-                cardImg.classList.remove('flipped');
-            }
-            const cardImgSrc = singleObject.imgSrc;
-            cardImg.src = cardImgSrc;
-            singleCardDiv.appendChild(cardImg);
-            
-            const fortuneTitle = document.createElement('p');
-            if(j === 0) {
-                fortuneTitle.textContent = 'Your Future';
-            } else if(j === 1) {
-                fortuneTitle.textContent = 'Your Present';
-            } else if(j === 2) {
-                fortuneTitle.textContent = 'Your Past';
-            }
-            
-            singleCardDiv.appendChild(fortuneTitle);
-
-            const fortuneString = document.createElement('div');
-            const fortuneUp = singleObject.readingText;
-            const fortuneDown = singleObject.readingReversed;
-            if(isFlippedStatus === 'upside-down') {
-                fortuneString.textContent = fortuneDown;
-            } else if(isFlippedStatus === 'upside-up') {
-                fortuneString.textContent = fortuneUp;
-            }
-            singleCardDiv.appendChild(fortuneString);
-            
-            
-    
-            
-        }
-    
-        section.appendChild(readDiv);
+        generatePastReading(smallerArray, cardsDiv);
     }
     return section;
 }
 
-export default renderHand;
+function generatePastReading(smallerArray, cardsDiv) {
+    for(let j = 0; j < smallerArray.length; j++) {
+        const singleObject = smallerArray[j];
+        const singleCardDiv = document.createElement('div');
+        singleCardDiv.classList.add('card');
+        cardsDiv.appendChild(singleCardDiv);
 
+        const cardImg = document.createElement('img');
+        const isFlippedStatus = singleObject.displayDirection;
+        readingOrientation(isFlippedStatus, cardImg);
+        const cardImgSrc = singleObject.imgSrc;
+        cardImg.src = cardImgSrc;
+        singleCardDiv.appendChild(cardImg);
+
+        const fortuneTitle = document.createElement('p');
+        generateTitle(j, fortuneTitle);
+        singleCardDiv.appendChild(fortuneTitle);
+
+        const fortuneString = document.createElement('div');
+        const fortuneUp = singleObject.readingText;
+        const fortuneDown = singleObject.readingReversed;
+        displayOrientation(isFlippedStatus, fortuneString, fortuneDown, fortuneUp);
+        singleCardDiv.appendChild(fortuneString);
+    }
+}
+
+function readingOrientation(isFlippedStatus, cardImg) {
+    if(isFlippedStatus === 'upside-down') {
+        cardImg.classList.add('flipped');
+    }
+    else if(isFlippedStatus === 'upside-up') {
+        cardImg.classList.remove('flipped');
+    }
+}
+
+function generateTitle(j, fortuneTitle) {
+    if(j === 0) {
+        fortuneTitle.textContent = 'Your Future';
+    }
+    else if(j === 1) {
+        fortuneTitle.textContent = 'Your Present';
+    }
+    else if(j === 2) {
+        fortuneTitle.textContent = 'Your Past';
+    }
+}
+
+function displayOrientation(isFlippedStatus, fortuneString, fortuneDown, fortuneUp) {
+    if(isFlippedStatus === 'upside-down') {
+        fortuneString.textContent = fortuneDown;
+    }
+    else if(isFlippedStatus === 'upside-up') {
+        fortuneString.textContent = fortuneUp;
+    }
+}
+
+
+export default renderHand;
