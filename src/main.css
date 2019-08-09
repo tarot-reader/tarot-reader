@@ -2,16 +2,18 @@
 body {
     margin: 0;
     padding-bottom: 20px;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
-    justify-content: space-around;
-    height: 10vh;
+    justify-content: space-between;
+    height: 11vh;
     width: 100vw;
     background-color: rgba(7, 0, 2, 0.747);
     color: rgba(253, 204, 238, 0.979);
     font-family: 'Nunito', sans-serif;
+    border-bottom: double medium white;
 }
 
 h1 {
@@ -42,7 +44,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    text-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
+    text-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a9efc, 0 0 4px #3a9efc, 0 0 6px #3a9efc, 0 0 7px #3a9efc, 0 0 9px #3a9efc;
 }
 
 main {

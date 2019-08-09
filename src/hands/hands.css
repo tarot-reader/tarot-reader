@@ -1,5 +1,7 @@
 html {
-    background-image: url('/assets/about-us-background.jpg')
+    background-image: url('/assets/about-us-background.jpg');
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 body {

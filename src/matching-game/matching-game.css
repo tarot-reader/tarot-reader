@@ -4,7 +4,7 @@ html {
 
 body {
     background: rgba(0, 0, 0, 0.685);
-    overflow-x: hidden;
+    
 }
 
 .show-background {
@@ -14,13 +14,15 @@ body {
 #cards-display {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 60vw;
     margin: auto;
+    margin-top: 20px;
     justify-content: center;
 }
 
 .remove-border {
     border: medium double white;
+    
 }
 
 img {
@@ -53,11 +55,15 @@ img:hover {
     box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
 
+#reset-button:hover {
+    box-shadow:  0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a9efc, 0 0 4px #3a9efc, 0 0 6px #3a9efc, 0 0 7px #3a9efc, 0 0 9px #3a9efc;
+}
+
 #reset-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.2em;
     width: 180px;
     height: 80px;
@@ -66,6 +72,7 @@ img:hover {
     text-shadow: 0 0 5px black, 0 0 10px #ff0080;
     cursor: pointer;
     border-radius: 6px;
+    box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
 
 .hidden {

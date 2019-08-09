@@ -23,9 +23,9 @@ header {
 }
 
 main {
-    width: 60vw;
+    width: 70vw;
     min-width: 800px;
-    margin: 50px auto;
+    margin: 30px auto;
     background-color: rgba(0, 0, 0, 0.466);
     justify-content: space-evenly;
     border: medium double white;
@@ -42,14 +42,15 @@ main {
 div {
     display: flex;
     height: 400px;
-    width: 160px;
-    margin: 25px;
+    width: 180px;
+    margin: 55px;
+    margin-top: 40px;
     flex-direction: column;
     align-items: center;
 }
 
 img {
-    height: 60%;
+    height: 70%;
 }
 
 .text {

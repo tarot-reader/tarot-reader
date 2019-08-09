@@ -15,8 +15,9 @@ header {
 }
 
 body {
-    height: 100vh;
+    height: 150vh;
     background: rgba(0, 0, 0, 0.685);
+
 }
 
 main {
@@ -43,8 +44,8 @@ main {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 90%;
-    height: 30vh;
+    width: 87%;
+    height: 20vh;
     margin: 0 auto;
     color: black;
     text-shadow: none;
@@ -73,7 +74,7 @@ img.tarot-card {
 }
 
 button:hover {
-    box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a5dfc, 0 0 4px #3a5dfc, 0 0 6px #3a5dfc, 0 0 7px #3a5dfc, 0 0 9px #3a5dfc;
+    box-shadow: 0 0 1px rgb(231, 239, 255), 0 0 2px rgb(202, 231, 255), 0 0 3px #3a9efc, 0 0 4px #3a9efc, 0 0 6px #3a9efc, 0 0 7px #3a9efc, 0 0 9px #3a9efc;
 }
 
 .hidden {
@@ -89,7 +90,7 @@ button:hover {
     width: 60vw;
     background-color: rgb(210,180,140);
     border: 1px dashed black;
-    padding: 16px 4px 0px 4px;
+    padding: 25px 4px 0px 4px;
 }
 
 .ppf {
@@ -100,23 +101,23 @@ button:hover {
 }
 
 #past-header{
-    width: 15vw;
+    width: 16vw;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 2px;
 }
 
 #present-header {
-    width: 15vw;
+    width: 16vw;
     position: absolute;
-    top: 0;
+    top: 2px;
 }
 
 #future-header {
-    width: 15vw;
+    width: 16vw;
     position: absolute;
-    top: 0;
-    left: 67%;
+    top: 1px;
+    left: 66.85%;
 }
 
 #render-reading, #reset-reading {
