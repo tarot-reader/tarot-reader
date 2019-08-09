@@ -71,6 +71,7 @@ img:hover {
     background-color: black;
     text-shadow: 0 0 5px black, 0 0 10px #ff0080;
     cursor: pointer;
+    border: 1px white solid;
     border-radius: 6px;
     box-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 5px #ff0080, 0 0 10px #ff0080, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
 }
