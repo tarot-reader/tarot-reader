@@ -67,7 +67,7 @@ function match() {
     openedButtons[0].disabled = true;
     openedButtons[1].disabled = true;
     openedButtons = [];
-    if(totalMatches.length === 16) {
+    if(totalMatches.length === 12) {
         displayWin();
     }
 
