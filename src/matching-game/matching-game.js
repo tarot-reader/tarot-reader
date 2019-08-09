@@ -8,11 +8,11 @@ const cards = document.getElementsByClassName('card');
 const resetButton = document.getElementById('reset-button');
 const background = document.getElementById('background');
 
-const eightCardArray = info.randomCards(8);
-const sixteenCardArray = [];
-for(let i = 0; i < eightCardArray.length; i++) {
-    sixteenCardArray.push(eightCardArray[i]);
-    sixteenCardArray.push(eightCardArray[i]);
+const sixCardArray = info.randomCards(6);
+const twelveCardArray = [];
+for(let i = 0; i < sixCardArray.length; i++) {
+    twelveCardArray.push(sixCardArray[i]);
+    twelveCardArray.push(sixCardArray[i]);
 }
 
 // shuffle array function from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript
@@ -26,7 +26,7 @@ function shuffle(array) {
     }
     return array;
 }
-const shuffledArray = shuffle(sixteenCardArray);
+const shuffledArray = shuffle(twelveCardArray);
 
 for(let i = 0; i < shuffledArray.length; i++) {
     renderButton(shuffledArray[i], i);
