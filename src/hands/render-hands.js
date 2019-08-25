@@ -41,13 +41,14 @@ function generatePastReading(smallerArray, cardsDiv) {
         singleCardDiv.appendChild(cardImg);
 
         const fortuneTitle = document.createElement('p');
-        generateTitle(j, fortuneTitle);
+        // look up from array
+        fortuneTitle.textContent = titles[j];
         singleCardDiv.appendChild(fortuneTitle);
 
         const fortuneString = document.createElement('div');
         const fortuneUp = singleObject.readingText;
         const fortuneDown = singleObject.readingReversed;
-        displayOrientation(isFlippedStatus, fortuneString, fortuneDown, fortuneUp);
+        fortuneString.textContent = getFortune(isFlippedStatus, fortuneDown, fortuneUp);
         singleCardDiv.appendChild(fortuneString);
     }
 }
@@ -61,25 +62,26 @@ function readingOrientation(isFlippedStatus, cardImg) {
     }
 }
 
-function generateTitle(j, fortuneTitle) {
-    if(j === 0) {
-        fortuneTitle.textContent = 'Your Future';
-    }
-    else if(j === 1) {
-        fortuneTitle.textContent = 'Your Present';
-    }
-    else if(j === 2) {
-        fortuneTitle.textContent = 'Your Past';
-    }
-}
+// arrays can be handy for this:
+const titles = ['Your Future', 'Your Present', 'Your Past'];
 
-function displayOrientation(isFlippedStatus, fortuneString, fortuneDown, fortuneUp) {
+// function generateTitle(j, fortuneTitle) {
+//     if(j === 0) {
+//         fortuneTitle.textContent = 'Your Future';
+//     }
+//     else if(j === 1) {
+//         fortuneTitle.textContent = 'Your Present';
+//     }
+//     else if(j === 2) {
+//         fortuneTitle.textContent = 'Your Past';
+//     }
+// }
+
+function getFortune(isFlippedStatus, fortuneDown, fortuneUp) {
     if(isFlippedStatus === 'upside-down') {
-        fortuneString.textContent = fortuneDown;
+        return fortuneDown;
     }
-    else if(isFlippedStatus === 'upside-up') {
-        fortuneString.textContent = fortuneUp;
-    }
+    return fortuneUp;
 }
 
 
