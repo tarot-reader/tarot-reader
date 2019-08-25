@@ -15,9 +15,10 @@ const presentText = document.getElementById('present');
 const futureText = document.getElementById('future');
 const readingVisible = document.getElementById('reading-text');
 
-const faceDownArray = [rightCardBack, middleCardBack, leftCardBack];
-const faceUpArray = [rightCardFace, middleCardFace, leftCardFace];
-const textArray = [futureText, presentText, pastText];
+// try and avoid data types in variable names
+const faceDownCards = [rightCardBack, middleCardBack, leftCardBack];
+const faceUpCards = [rightCardFace, middleCardFace, leftCardFace];
+const timeText = [futureText, presentText, pastText];
 
 function showFaceCards() {
     const threeCardArray = info.randomCards(3);
@@ -25,8 +26,8 @@ function showFaceCards() {
         const cardImageSrc = threeCardArray[i].imgSrc;
         const cardDisplay = threeCardArray[i].displayDirection;
         const cardObject = threeCardArray[i];
-        const cardOnPage = faceUpArray[i];
-        const textDiv = textArray[i];
+        const cardOnPage = faceUpCards[i];
+        const textDiv = timeText[i];
         cardOnPage.src = cardImageSrc;
  
         const reverseRead = cardObject.readingReversed;
@@ -44,32 +45,34 @@ function showFaceCards() {
     }
 }
 
-function hideBackCards() {
-    for(let i = 0; i < faceDownArray.length; i++) {
-        let cardBack = faceDownArray[i];
-        cardBack.classList.add('hidden');
+function addClassToAll(elements, className) {
+    for(let i = 0; i < elements.length; i++) {
+        let cardBack = elements[i];
+        cardBack.classList.add(className);
     }
+}
+
+function removeClassFromAll(elements, className) {
+    for(let i = 0; i < elements.length; i++) {
+        let cardBack = elements[i];
+        cardBack.classList.remove(className);
+    }
+}
+
+function hideBackCards() {
+    addClassToAll(faceDownCards, 'hidden');
 }
    
 function showBackCards() {
-    for(let i = 0; i < faceDownArray.length; i++) {
-        let cardBack = faceDownArray[i];
-        cardBack.classList.remove('hidden');
-    }
+    removeClassFromAll(faceDownCards, 'hidden');
 }
 
 function hideFaceCards() {
-    for(let i = 0; i < faceUpArray.length; i++) {
-        let cardFace = faceUpArray[i];
-        cardFace.classList.add('hidden');
-    }
+    addClassToAll(faceUpCards, 'hidden');
 }
 
 function unHideFaceCards() {
-    for(let i = 0; i < faceUpArray.length; i++) {
-        let cardFace = faceUpArray[i];
-        cardFace.classList.remove('hidden');
-    }
+    removeClassFromAll(faceUpCards, 'hidden');
 }
 
 renderReading.addEventListener('click', () => {
